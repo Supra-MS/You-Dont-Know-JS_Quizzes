@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Supra-MS/rpt22-mvp.git"
+    "url": "git+https://github.com/Supra-MS/You-Dont-Know-JS_Quizzes.git"
   },
   "author": "Supra",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Supra-MS/rpt22-mvp/issues"
+    "url": "https://github.com/Supra-MS/You-Dont-Know-JS_Quizzes/issues"
   },
-  "homepage": "https://github.com/Supra-MS/rpt22-mvp#readme",
+  "homepage": "https://github.com/Supra-MS/You-Dont-Know-JS_Quizzes#readme",
   "dependencies": {
     "axios": "^0.19.2",
     "body-parser": "^1.19.0",
