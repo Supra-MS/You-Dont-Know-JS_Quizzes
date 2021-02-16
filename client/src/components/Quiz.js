@@ -74,7 +74,6 @@ class Quiz extends React.Component {
     }
 
     if (currentQuizData.length - 1 > currentQuiz) {
-      console.log('inside next quiz', currentQuizData.length - 1, currentQuiz, currentQuizData)
       this.setState({
         currentQuiz: currentQuiz + 1,
         isClicked: false,
@@ -83,16 +82,13 @@ class Quiz extends React.Component {
 
     }
     else if (currentQuizData.length - 1 === currentQuiz) {
-      console.log('inside === quiz', currentQuizData.length - 1, currentQuiz);
       if (data[bookIndex].chapters.length - 1 === chapterIndex) {
-        console.log("=======+++++else========", chapterIndex)
         this.setState({
           isNextChapter: true,
           enablePlayAgain: true
-        })
+        });
 
       } else {
-        console.log("=======+++++========", chapterIndex);
         let chapterName = data[bookIndex].chapters[chapterIndex+1].chapter_name;
         this.setActiveBookTopic(bookIndex, chapterIndex + 1);
         this.setState({
@@ -102,12 +98,8 @@ class Quiz extends React.Component {
         });
 
       }
-
-
-
     }
     else {
-      console.log('inside else next quiz', currentQuizData.length - 1, currentQuiz)
       this.setState({
         enablePlayAgain: true
       });
@@ -116,7 +108,6 @@ class Quiz extends React.Component {
 
   previousQuiz() {
     let { currentQuiz, finishedQuestions, inCorrectAnswers, correctAnswers, currentQuizData, bgColorState } = this.state;
-    console.log('previous quiz: ', bgColorState)
     if (currentQuiz > 0) {
       finishedQuestions.pop();
       if (bgColorState === '#f98181') {
@@ -187,7 +178,6 @@ class Quiz extends React.Component {
     let { data } = this.state;
     let currentQuizData = data[bkId].chapters[chIndex].quizzes;
     let chapterName = data[bkId].chapters[chIndex].chapter_name;
-    console.log('Current quiz data: ', currentQuizData);
 
     this.setState({
       currentQuizData,
@@ -223,20 +213,7 @@ class Quiz extends React.Component {
   }
 
   render() {
-    let { data, currentQuizData, currentQuiz, correctAnswers, inCorrectAnswers, finishedQuestions, bgColorState, isClicked, chapterIndex, isExplainHidden, bookIndex, isNextChapter, chapterName } = this.state;
-
-    console.log(`
-      chapterName: ${chapterName}
-      bookIndex: ${bookIndex}
-      chapterIndex: ${chapterIndex}
-      isClicked: ${isClicked}
-      bgColorState: ${bgColorState}
-      Finished questions: [${finishedQuestions}],
-      current quiz: ${currentQuiz}
-      Incorrect Answers: [${inCorrectAnswers}]
-      Correct Answers: [${correctAnswers}]
-      isNextChapter: ${isNextChapter}
-    `);
+    let { data, currentQuizData, currentQuiz, correctAnswers, inCorrectAnswers, finishedQuestions, bgColorState, isClicked, chapterIndex, isExplainHidden, bookIndex, chapterName } = this.state;
 
     return (
       <div className="jumbotron">
@@ -343,39 +320,3 @@ export default Quiz;
     }
   });
 */
-
-    // if (data[bookIndex].chapters.length - 1 === chapterIndex) {
-    //   this.getQuizData(bookIndex + 1);
-    //   this.setState({
-    //     // data: [],
-    //     // currentQuizData: [],
-    //     currentQuiz: 0,
-    //     correctAnswers: [],
-    //     inCorrectAnswers: [],
-    //     enablePlayAgain: false,
-    //     finishedQuestions: [],
-    //     bgColorState: '',
-    //     isClicked: false,
-    //     bookIndex: bookIndex + 1,
-    //     chapterIndex: 0,
-    //     isExplainHidden: true
-    //   });
-
-    // } else {
-    //   console.log("=======+++++========", chapterIndex)
-    //   this.getQuizData(bookIndex);
-    //   this.setState({
-    //     chapterIndex: chapterIndex + 1,
-    //     currentQuiz: 0,
-    //     correctAnswers: [],
-    //     inCorrectAnswers: [],
-    //     finishedQuestions: [],
-    //     bgColorState: '',
-    //     isClicked: false,
-    //     isExplainHidden: true
-    //   }, () => {
-    //     // this.setActiveBookTopic(bookIndex, chapterIndex+1)
-
-    //   })
-
-    // }

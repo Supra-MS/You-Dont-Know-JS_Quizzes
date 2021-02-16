@@ -60,7 +60,6 @@ function QuizList({ data, handleClick, currentQuizData, currentQuizIndex, nextQu
               <ul key={optIndex} className="list-group">
               {option.answers.length ?
                 <li style={{ backgroundColor: option.bgColor, color: option.bgColor === '#81af81' || option.bgColor === '#f98181' ? 'white' : '' }} className={`list-group-item `} onClick={() => {
-                  console.log('Each quiz correct answer: ', currentQuizData[currentQuizIndex].correctAnswer, '😇', 'Clicked ->', optIndex);
                   bgColor = currentQuizData[currentQuizIndex].correctAnswer === optIndex ? '#81af81' : '#f98181';
                   ansInitBgColor = option.bgColor
                   ansLength = currentQuizData[currentQuizIndex].answers.length;
