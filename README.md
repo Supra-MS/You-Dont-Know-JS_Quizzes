@@ -55,9 +55,4 @@ $ npm run build
 
 or
 
-$ npm run dev:build
-
-
-
-
-
+$ npm run dev
