@@ -1,7 +1,7 @@
 {
   "name": "Quick Quiz",
   "version": "1.0.0",
-  "description": "Quick Quiz inspired from you-don't know js book",
+  "description": "Quick Quiz inspired from you-don't know js book series",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

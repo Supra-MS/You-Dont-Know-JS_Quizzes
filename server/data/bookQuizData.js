@@ -1,7 +1,7 @@
 let quizData = [
   {
     "_id": 1,
-    "book_name": "Into programming & Javascript",
+    "book_name": "Up & Going",
     "chapters": [
       {
         "chapter_id": 1,
