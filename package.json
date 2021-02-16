@@ -1,7 +1,7 @@
 {
-  "name": "rpt22-mvp",
+  "name": "Quick Quiz",
   "version": "1.0.0",
-  "description": "Quick Notes with Quiz",
+  "description": "Quick Quiz inspired from you-don't know js book",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
