@@ -252,4 +252,17 @@ a.nav-link:hover {
   border-color:#28a745;
 }
 
+.cm-s-oceanic-next .CodeMirror-linenumber {
+  color: #9a9a9a !important;
+}
 
+.CodeMirror {
+  height: auto !important;
+  margin: 20px 0px !important;
+}
+
+.cm-s-oceanic-next.CodeMirror, .cm-s-oceanic-next .CodeMirror-gutters {
+  padding: 0px 20px !important;
+  background-color: rgb(41 59 60) !important;
+  border-radius: 5px !important;
+}

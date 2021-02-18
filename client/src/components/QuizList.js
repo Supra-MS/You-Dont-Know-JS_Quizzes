@@ -1,6 +1,12 @@
 import React, { useContext } from 'react';
 import { Accordion, Card, AccordionContext } from 'react-bootstrap';
 import { useAccordionToggle } from 'react-bootstrap/AccordionToggle';
+import { Controlled as CodeMirror } from "react-codemirror2";
+import 'codemirror/lib/codemirror.css';
+import 'codemirror/theme/oceanic-next.css';
+require('codemirror/mode/javascript/javascript');
+
+const options = { lineNumbers: true, indentUnit: 4, mode: 'javascript', theme: 'oceanic-next' };
 
 function ContextAwareToggle({ children, eventKey, callback }) {
   const currentEventKey = useContext(AccordionContext);
@@ -32,7 +38,7 @@ function QuizList({ data, handleClick, currentQuizData, currentQuizIndex, nextQu
               <Card key={i} className="list-group" >
                 <Card.Header>
                   <ContextAwareToggle eventKey={`${i}`}>
-                    {`${i+1}. ${bTopic.book_name}`}
+                    {`${i + 1}. ${bTopic.book_name}`}
                   </ContextAwareToggle>
                 </Card.Header>
                 {bTopic.chapters.map((ch, j) => {
@@ -52,21 +58,24 @@ function QuizList({ data, handleClick, currentQuizData, currentQuizIndex, nextQu
 
       <div className="col-md-8 quiz-list">
         <h5 className="quiz-list-h">Question {`${currentQuizIndex + 1}`} of {`${currentQuizData.length}`} </h5>
-        <h5 className="quiz-list-h" style={{color: "rgb(123, 33, 248)"}}>Chapter: {chapterName}</h5>
+        <h5 className="quiz-list-h" style={{ color: "rgb(123, 33, 248)" }}>Chapter: {chapterName}</h5>
         <div className="col-md-10 quiz">
-          <h6 style={{ color: 'white', fontSize: "22px" }} >{currentQuizData[currentQuizIndex].question}</h6>
+          <h6 style={{ color: 'white', fontSize: "22px" }} >{currentQuizData[currentQuizIndex].question}  </h6>
+          {currentQuizData[currentQuizIndex]?.code.length ?
+            <CodeMirror value={currentQuizData[currentQuizIndex]?.code} options={options} />
+          : null}
           {currentQuizData[currentQuizIndex].answers.map((option, optIndex) => {
             return (
               <ul key={optIndex} className="list-group">
-              {option.answers.length ?
-                <li style={{ backgroundColor: option.bgColor, color: option.bgColor === '#81af81' || option.bgColor === '#f98181' ? 'white' : '' }} className={`list-group-item `} onClick={() => {
-                  bgColor = currentQuizData[currentQuizIndex].correctAnswer === optIndex ? '#81af81' : '#f98181';
-                  ansInitBgColor = option.bgColor
-                  ansLength = currentQuizData[currentQuizIndex].answers.length;
-                  isCompleted = currentQuizData[currentQuizIndex].isCompleted;
-                  handleClick(optIndex, bgColor, ansInitBgColor, ansLength, isCompleted);
-                }}>{option.answers}</li>
-              : null}
+                {option.answers.length ?
+                  <li style={{ backgroundColor: option.bgColor, color: option.bgColor === '#81af81' || option.bgColor === '#f98181' ? 'white' : '' }} className={`list-group-item `} onClick={() => {
+                    bgColor = currentQuizData[currentQuizIndex].correctAnswer === optIndex ? '#81af81' : '#f98181';
+                    ansInitBgColor = option.bgColor
+                    ansLength = currentQuizData[currentQuizIndex].answers.length;
+                    isCompleted = currentQuizData[currentQuizIndex].isCompleted;
+                    handleClick(optIndex, bgColor, ansInitBgColor, ansLength, isCompleted);
+                  }}>{option.answers}</li>
+                  : null}
               </ul>
             );
           })}

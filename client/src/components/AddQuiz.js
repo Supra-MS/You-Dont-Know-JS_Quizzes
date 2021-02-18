@@ -11,6 +11,7 @@ class AddQuiz extends Component {
       answer3: '',
       answer4: '',
       answers: [],
+      code: '',
       correctAnswer: '',
       explain: '',
       isSubmitted: false
@@ -24,15 +25,16 @@ class AddQuiz extends Component {
     const name = e.target.name;
     const value = e.target.value;
     this.setState({
-        [name]: value,
+      [name]: value,
     });
   }
 
   postQuiz() {
-    let { question, answer1, answer2, answer3, answer4, correctAnswer, explain } = this.state;
+    let { question, code, answer1, answer2, answer3, answer4, correctAnswer, explain } = this.state;
     let data = {
-      question,
       answers: [answer1, answer2, answer3, answer4],
+      question,
+      code,
       correctAnswer: (Number(correctAnswer)),
       explain
     };
@@ -47,22 +49,24 @@ class AddQuiz extends Component {
         console.log('Error posting the quiz: ', error);
       });
 
-      this.setState({
-        question: '',
-        answer1: '',
-        answer2: '',
-        answer3: '',
-        answer4: '',
-        answers: [],
-        correctAnswer: '',
-        explain: '',
-        isSubmitted: true
-      });
+    this.setState({
+      question: '',
+      answer1: '',
+      answer2: '',
+      answer3: '',
+      answer4: '',
+      answers: [],
+      correctAnswer: '',
+      explain: '',
+      code: '',
+      isSubmitted: true
+    });
   }
 
   newQuiz() {
     this.setState({
       question: '',
+      code: '',
       answers: '',
       correctAnswer: '',
       isSubmitted: false
@@ -70,20 +74,25 @@ class AddQuiz extends Component {
   }
 
   render() {
-    let { question, explain, correctAnswer, isSubmitted, answer1, answer2, answer3, answer4 } = this.state;
+    let { question, code, explain, correctAnswer, isSubmitted, answer1, answer2, answer3, answer4 } = this.state;
 
     return (
       <div className="jumbotron">
         <form onSubmit={(e) => {
           e.preventDefault();
           this.postQuiz();
-          }}>
+        }}>
           <div className="form-group">
             <label>* Question: </label>
             <textarea className="form-control que" type="text" name="question" value={question}
               onChange={this.handleInputChange}
               onClick={this.newQuiz}
               required></textarea>
+            <label>Code:</label>
+            <textarea className="form-control que" type="text" name="code" value={code}
+              onChange={this.handleInputChange}
+              onClick={this.newQuiz}
+            ></textarea>
           </div>
           <div className="form-group">
             <label>* Option 0: </label>
