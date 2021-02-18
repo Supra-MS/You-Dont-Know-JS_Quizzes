@@ -2,6 +2,13 @@ import React from 'react';
 import QuizList from './QuizList.js';
 import http from '../../src/http-client-axios.js';
 
+import { Controlled as CodeMirror } from "react-codemirror2";
+import 'codemirror/lib/codemirror.css';
+import 'codemirror/theme/oceanic-next.css';
+require('codemirror/mode/javascript/javascript');
+
+const options = { lineNumbers: true, indentUnit: 4, mode: 'javascript', theme: 'oceanic-next' };
+
 const setInitialState = () => {
   return {
     data: [],
@@ -89,7 +96,7 @@ class Quiz extends React.Component {
         });
 
       } else {
-        let chapterName = data[bookIndex].chapters[chapterIndex+1].chapter_name;
+        let chapterName = data[bookIndex].chapters[chapterIndex + 1].chapter_name;
         this.setActiveBookTopic(bookIndex, chapterIndex + 1);
         this.setState({
           chapterIndex: chapterIndex + 1,
@@ -241,24 +248,29 @@ class Quiz extends React.Component {
             }
           </div>
           :
-          <div style={{ textAlign: 'center' }}>
-            <p style={{ color: 'rgb(69, 104, 105)', fontSize: '30px' }}>{`You have got ${correctAnswers.length} / ${finishedQuestions.length} Correct answers!!!`}</p>
+          <div>
+            <div style={{ textAlign: 'center' }}>
+              <p style={{ color: 'rgb(69, 104, 105)', fontSize: '30px' }}>{`You have got ${correctAnswers.length} / ${finishedQuestions.length} Correct answers!!!`}</p>
 
-            {data.length - 1 === bookIndex ?
-              <div>
-                <p style={{ color: 'rgb(69, 104, 105)', fontSize: '30px' }}>{`End of All Topics`} </p>
-                <button className="btn-warning" onClick={this.playAgain.bind(this)}>Start Again</button>
-              </div>
-              :
-              <div>
-                <p style={{ color: 'rgb(69, 104, 105)', fontSize: '30px' }}>{`End of Topic ${bookIndex + 1}`} </p>
-                <button className="btn-warning" onClick={this.nextChapter.bind(this)}>Go To Next Topic</button>
-              </div>
-            }
+              {data.length - 1 === bookIndex ?
+                <div>
+                  <p style={{ color: 'rgb(69, 104, 105)', fontSize: '30px' }}>{`End of All Topics`} </p>
+                  <button className="btn-warning" onClick={this.playAgain.bind(this)}>Start Again</button>
+                </div>
+                :
+                <div>
+                  <p style={{ color: 'rgb(69, 104, 105)', fontSize: '30px' }}>{`End of Topic ${bookIndex + 1}`} </p>
+                  <button className="btn-warning" onClick={this.nextChapter.bind(this)}>Go To Next Topic</button>
+                </div>
+              }
+            </div>
             {inCorrectAnswers.map((wrongQuiz, i) => {
               return (
                 <div key={i} className="col-md-10 quiz">
                   <h6 style={{ color: 'white', fontSize: "22px" }} >{wrongQuiz.question}</h6>
+                  {wrongQuiz.code.length ?
+                    <CodeMirror value={wrongQuiz.code} options={options} />
+                    : null}
                   {wrongQuiz.answers.map((option, optIndex) => {
                     console.log('inCorrect answers:')
                     return (
@@ -273,28 +285,12 @@ class Quiz extends React.Component {
               );
             })}
 
-            {correctAnswers.map((rightQuiz, i) => {
-              return (
-                <div key={i} className="col-md-10 quiz">
-                  <h6 style={{ color: 'white', fontSize: "22px" }} >{rightQuiz.question}</h6>
-                  {rightQuiz.answers.map((option, optIndex) => {
-                    console.log('Correct answers:');
-                    return (
-                      <ul key={optIndex} className="list-group">
-                        {option.answers.length ?
-                          <li style={{ backgroundColor: option.bgColor, color: option.bgColor ? 'white' : '' }} className={`list-group-item `}>{option.answers}</li>
-                          : null}
-                      </ul>
-                    )
-                  })}
-                </div>
-              );
-            })}
-            {(inCorrectAnswers.length || correctAnswers.length) ?
-              data.length - 1 === bookIndex ? <button className="btn-warning" onClick={this.playAgain.bind(this)}>Start Again</button>
-                : <button className="btn-warning" onClick={this.nextChapter.bind(this)}>Go To Next Topic</button>
-              : ''}
-
+            <div style={{ textAlign: 'center' }}>
+              {(inCorrectAnswers.length || correctAnswers.length) ?
+                data.length - 1 === bookIndex ? <button className="btn-warning" onClick={this.playAgain.bind(this)}>Start Again</button>
+                  : <button className="btn-warning" onClick={this.nextChapter.bind(this)}>Go To Next Topic</button>
+                : ''}
+            </div>
           </div>
         }
       </div>

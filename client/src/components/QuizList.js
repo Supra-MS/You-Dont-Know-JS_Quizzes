@@ -62,7 +62,7 @@ function QuizList({ data, handleClick, currentQuizData, currentQuizIndex, nextQu
         <div className="col-md-10 quiz">
           <h6 style={{ color: 'white', fontSize: "22px" }} >{currentQuizData[currentQuizIndex].question}  </h6>
           {currentQuizData[currentQuizIndex]?.code.length ?
-            <CodeMirror value={currentQuizData[currentQuizIndex]?.code} options={options} />
+            <CodeMirror style={{textAlign: "left"}} value={currentQuizData[currentQuizIndex].code} options={options} />
           : null}
           {currentQuizData[currentQuizIndex].answers.map((option, optIndex) => {
             return (
