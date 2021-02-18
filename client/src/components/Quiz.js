@@ -122,6 +122,7 @@ class Quiz extends React.Component {
         correctAnswers,
         inCorrectAnswers,
       });
+
       let currentQuizDataAnsLen = currentQuizData[currentQuiz].answers.length;
       for (let i = 0; i < currentQuizDataAnsLen; i++) {
         if (currentQuizData[currentQuiz - 1].answers[i].bgColor.length) {
