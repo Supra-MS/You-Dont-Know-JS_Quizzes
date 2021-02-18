@@ -14,7 +14,8 @@ let quizData = [
               "3",
               "4"
             ],
-            "question": "How many expressions are there in the following statement: a = b * 2; ?",
+            "question": "How many expressions are there in the following statement:",
+            "code": "a = b * 2; ",
             "correctAnswer": 3,
             "explain": "This statement has four expressions in it: 2 is a literal value expression; b is a variable expression, which means to retrieve its current value; b * 2 is an arithmetic expression, which means to do the multiplication; a = b * 2 is an assignment expression, which means to assign the result of the b * 2 expression to the variable a."
           },
@@ -26,6 +27,7 @@ let quizData = [
               "A sheet or booklet giving details of items or performers at an event or performance."
             ],
             "question": "What is a computer program (source code / code)?",
+            "code": "",
             "correctAnswer": 2,
             "explain": "A program, often referred to as source code or just code, is a set of special instructions to tell the computer what tasks to perform. Usually code is saved in a text file, although with JavaScript you can also type code directly into a developer console in a browser."
           },
@@ -37,6 +39,7 @@ let quizData = [
               "The rules for valid format and combinations of instructions."
             ],
             "question": "What is a computer language (syntax)?",
+            "code": "",
             "correctAnswer": 3,
             "explain": "The rules for valid format and combinations of instructions is called a computer language, sometimes referred to as its syntax, much the same as English tells you how to spell words and how to create valid sentences using words and punctuation."
           },
@@ -48,6 +51,7 @@ let quizData = [
               "Any reference to a variable or value OR a set of variable(s) and value(s) combined with operators."
             ],
             "question": "What is an expression?",
+            "code": "",
             "correctAnswer": 3,
             "explain": "Statements are made up of one or more expressions. An expression is any reference to a variable or value, or a set of variable(s) and value(s) combined with operators."
           },
@@ -59,6 +63,7 @@ let quizData = [
               "Changes to values are tracked as your program runs."
             ],
             "question": "Interpreting the code is when... ?",
+            "code": "",
             "correctAnswer": 2,
             "explain": "Statements like a = b * 2 are helpful for developers when reading and writing, but are not actually in a form the computer can directly understand. So a special utility on the computer (either an interpreter or a compiler) is used to translate the code you write into commands a computer can understand. For some computer languages, this translation of commands is typically done from top to bottom, line by line, every time the program is run, which is usually called interpreting the code."
           },
@@ -70,6 +75,7 @@ let quizData = [
               "The translation of commands is done ahead of time so when the program is executed, what's running is the already translated computer instructions."
             ],
             "question": "Compiling is when... ?",
+            "code": "",
             "correctAnswer": 3,
             "explain": "It's typically asserted that JavaScript is interpreted, because your JavaScript source code is processed each time it's run. But that's not entirely accurate. The JavaScript engine actually compiles the program on the fly and then immediately runs the compiled code."
           },
@@ -81,6 +87,7 @@ let quizData = [
               "var even = 4;"
             ],
             "question": "Which of these next expressions has exactly one literal value, one variable, and one operator?",
+            "code": "",
             "correctAnswer": 3,
             "explain": "Characters like = and * are called operators. They perform actions with the values and variables such as assignment and mathematic multiplication. Variables are like simple boxes you can store any of your stuff in, and should be declared before they are used. In programs, variables hold values to be used by the program. By contrast to variables, literal values are the value itself. For example, 4 or 'cat' is a literal value. In other words, it stands alone without being stored in a variable."
           },
@@ -92,6 +99,7 @@ let quizData = [
               "console.log() statements often have an interactive pointer to the line of code that issued the logged statement."
             ],
             "question": "Which of these next statements is NOT true about alert() and console.log()? Remember, you can open the console in your browser and experiment.",
+            "code": "",
             "correctAnswer": 2,
             "explain": "This statement is not true, because the console can display many log() messages simultaneously (unlike the alert() method, which only displays one at a time). This is what makes console.log() a great tool for debugging your code, and for finding out what's going on under the hood."
           },
@@ -103,6 +111,7 @@ let quizData = [
               "var name = alert('What is your name? ');"
             ],
             "question": "Which is the correct way to get input from the user?",
+            "code": "",
             "correctAnswer": 1,
             "explain": "The prompt() method displays a dialog box that prompts the visitor for input. A prompt box is often used if you want the user to input a value before entering a page. The prompt() method returns the input value if the user clicks 'OK'. If the user clicks 'cancel' the method returns null."
           },
@@ -113,7 +122,8 @@ let quizData = [
               "assign, variable, declare",
               "introduce, variable, declare"
             ],
-            "question": "Fill in the blanks: In the expression var num = 20;, the operator = is used to __ the literal value 20 to the ___ num. The keyword var is used to ___ the variable.",
+            "question": "Fill in the blanks: In the expression var num = 20; the operator = is used to __ the literal value 20 to the ___ num. The keyword var is used to ___ the variable.",
+            "code": "",
             "correctAnswer": 2,
             "explain": "In the expression var num = 20;, the operator = is used to assign the literal value 20 to the variable num. The keyword var is used to declare the variable."
           },
@@ -125,6 +135,7 @@ let quizData = [
               "var even *= 2;"
             ],
             "question": "Which of these next expressions is NOT a compound assignment?",
+            "code": "",
             "correctAnswer": 0,
             "explain": "Compound Assignment examples: -=, *=, and += are compound operators that combine a math operation with assignment, as in a += 2 (same as a = a + 2). The double equal sign == is used to check equality."
           },
@@ -136,6 +147,7 @@ let quizData = [
               "99 == '99.00';"
             ],
             "question": "Which of these next equations will output the boolean value false? Remember, you can open the console in your browser and experiment.",
+            "code": "",
             "correctAnswer": 1,
             "explain": "When we use the== loose equals operator to make the comparison like '99.00' == 99.00, JavaScript will convert the left-hand side '99.00' to its number equivalent 99.00. The comparison then becomes 99.00 == 99.00, which is of course true. This is even true when the negative sign is outside of the double quotes, like so: -'99' == -99.00; . However, comparing negative and positive values returns false even when using the loose equals ==."
           },
@@ -147,6 +159,7 @@ let quizData = [
               "The code: if true { console.log('this is true!'); } is written in valid syntax and will print out the string."
             ],
             "question": "Which of these next statements is false?",
+            "code": "",
             "correctAnswer": 3,
             "explain": "JavaScript requires wrapping the conditional in parentheses, otherwise it returns a syntax error. You can test this by running the code if true { console.log('this is true!'); } in your browser console. Remember to also try running the same code with parentheses around the conditional."
           },
@@ -158,6 +171,7 @@ let quizData = [
               "All functions use loops (for, while, or do...while), which shorten our code significantly."
             ],
             "question": "Which of these next statements is NOT an example of how functions improve our code?",
+            "code": "",
             "correctAnswer": 3,
             "explain": "A function does not have to include a loop in order to save us time and make our code more readable. Some functions only have one line of code, for example console.log() (as shown in the chapter's examples)"
           },
@@ -169,6 +183,7 @@ let quizData = [
               "operators"
             ],
             "question": "Fill in the blank: You need ___ to perform actions on values.",
+            "code": "",
             "correctAnswer": 3,
             "explain": "The =, +, /, and * characters are examples of operators. They perform actions with the values and variables such as assignment, summation, division and mathematic multiplication."
           },
@@ -180,6 +195,7 @@ let quizData = [
               "variables"
             ],
             "question": "Fill in the blank: You need ___ to store data (aka state) during the execution of your program.",
+            "code": "",
             "correctAnswer": 3,
             "explain": "Variables are like simple boxes you can store any of your stuff in. In programs, variables hold values (like the number 42) to be used by the program. Think of them as symbolic placeholders for the values themselves."
           },
@@ -191,6 +207,7 @@ let quizData = [
               "loops, do...while"
             ],
             "question": "You need ___ like ___ to make decisions.",
+            "code": "",
             "correctAnswer": 2,
             "explain": "Conditionals are just simple 'yes or no' questions used to make decisions. Does my account have enough balance to purchase this?. The most common conditional is an if statement."
           },
@@ -202,6 +219,7 @@ let quizData = [
               "loops"
             ],
             "question": "You need ___ to repeat tasks until a condition stops being true.",
+            "code": "",
             "correctAnswer": 3,
             "explain": "Repeating a set of actions until a certain condition fails -- in other words, repeating only while the condition holds -- is the job of programming loops. Loops can take different forms, but they all satisfy this basic behavior."
           },
@@ -213,6 +231,7 @@ let quizData = [
               "operators"
             ],
             "question": "You need ___ to organize your code into logical and reusable chunks.",
+            "code": "",
             "correctAnswer": 0,
             "explain": "A function is generally a named section of code that can be 'called' by name, and the code inside it will be run each time. Functions are often used for code that you plan to call multiple times, but they can also be useful just to organize related bits of code into named collections, even if you only plan to call them once."
           }
@@ -230,6 +249,7 @@ let quizData = [
               "undefined, string literal, object"
             ],
             "question": "Which of the following are ALL built-in types of values?",
+            "code": "",
             "correctAnswer": 1,
             "explain": "JavaScript has typed values, not typed variables. The following built-in types are available: string, number, boolean, null and undefined, object, symbol (new to ES6)"
           },
@@ -241,6 +261,7 @@ let quizData = [
               "return"
             ],
             "question": "What is the operator that can be used to find out the type of a value?",
+            "code": "",
             "correctAnswer": 2,
             "explain": "JavaScript provides a typeof operator that can examine a value and tell you what type it is. The return value from the typeof operator is always one of six (seven as of ES6! - the 'symbol' type) string values. That is, typeof 'abc' returns 'string', not string."
           },
@@ -251,7 +272,9 @@ let quizData = [
               "undefined",
               "number"
             ],
-            "question": "What is the return value of: typeof null?",
+            "question": "What is the return value of:",
+            "code": "",
+            "code": "typeof null",
             "correctAnswer": 1,
             "explain": "typeof null is an interesting case, because it errantly returns 'object', when you'd expect it to return 'null' (just like typeof undefined returns undefined). You can run this command in your console and see for yourself."
           },
@@ -262,7 +285,8 @@ let quizData = [
               "undefined",
               "syntax error"
             ],
-            "question": "What is the return value of: typeof [1,2,3] === typeof {val: 'a', val: 'b', val: 'c'}; ?",
+            "question": "What is the return value of: ",
+            "code": "typeof [1,2,3] === typeof {val: 'a', val: 'b', val: 'c'};",
             "correctAnswer": 0,
             "explain": "Arrays are special objects, so the typeof of both expressions are objects and the return value is true. Run both expressions in your console to see that the return value of typeof [1,2,3] and typeof {1, 2, 3} is object."
           },
@@ -274,6 +298,7 @@ let quizData = [
               "the same as in an array"
             ],
             "question": "In which ways can properties be accessed in an object?",
+            "code": "",
             "correctAnswer": 0,
             "explain": "Properties can either be accessed with dot notation (i.e., obj.a) or bracket notation (i.e., obj'a'). Dot notation is shorter and generally easier to read, and is thus preferred when possible."
           },
@@ -285,6 +310,7 @@ let quizData = [
               "anything can be stored in objects but only strings and numbers in an array"
             ],
             "question": "What is the main difference between an array and an object?",
+            "code": "",
             "correctAnswer": 2,
             "explain": "An array is an object that holds values (of any type) not particularly in named properties/keys, but rather in numerically indexed positions. Languages that start counting at zero, like JS does, use 0 as the index of the first element in the array."
           },
@@ -296,6 +322,7 @@ let quizData = [
               "length"
             ],
             "question": "Which of the following is an array property?",
+            "code": "",
             "correctAnswer": 3,
             "explain": "Because arrays are special objects (as typeof implies), they can also have properties, including the automatically updated length property."
           },
@@ -307,6 +334,7 @@ let quizData = [
               "to find out the count of properties"
             ],
             "question": "What is the most appropriate use of an object?",
+            "code": "",
             "correctAnswer": 2,
             "explain": "You theoretically could use an array as a normal object with your own named properties, or you could use an object but only give it numeric properties (0, 1, etc.) similar to an array. However, this would generally be considered improper usage of the respective types. The best and most natural approach is to use arrays for numerically positioned values and use objects for named properties."
           },
@@ -318,6 +346,7 @@ let quizData = [
               "equal and unequal"
             ],
             "question": "What are the types of coercion (conversion from one type to another)?",
+            "code": "",
             "correctAnswer": 1,
             "explain": "Coercion comes in two forms in JavaScript: explicit and implicit. Explicit coercion is simply that you can see obviously from the code that a conversion from one type to another will occur, whereas implicit coercion is when the type conversion can happen as more of a non-obvious side effect of some other operation."
           },
@@ -329,6 +358,7 @@ let quizData = [
               "var b = String( 5 );"
             ],
             "question": "Which of these next statements is an implicit coercion (conversion from one type to another)?",
+            "code": "",
             "correctAnswer": 1,
             "explain": "Implicit coercion is when the type conversion can happen as more of a non-obvious side effect of some other operation, such as multiplication by 1 in the second answer."
           },
@@ -340,6 +370,7 @@ let quizData = [
               "false / false"
             ],
             "question": "If var a = 42 and var b = '42', what will the statements a === b AND a == b return?",
+            "code": "",
             "correctAnswer": 1,
             "explain": "== checks for value equality with coercion allowed, and === checks for value equality without allowing coercion; === is often called 'strict equality' for this reason. In the a == b comparison, JS notices that the types do not match, so it goes through an ordered series of steps to coerce one or both values to a different type until the types match, where then a simple value equality can be checked. The a === b produces false, because the coercion is not allowed, so the simple value comparison obviously fails."
           },
@@ -351,6 +382,7 @@ let quizData = [
               "it makes the code easier to maintain"
             ],
             "question": "What happens when you assign a variable that has not yet been declared?",
+            "code": "",
             "correctAnswer": 2,
             "explain": "If you try to set a variable that hasn't been declared, you'll either end up creating a variable in the top-level global scope (bad!) or getting an error, depending on 'strict mode' (see 'Strict Mode')."
           },
@@ -362,6 +394,7 @@ let quizData = [
               "If either value in a comparison could be an empty string '' or an empty array []."
             ],
             "question": "In which of these cases would we probably be safe using == rather than === for comparison?",
+            "code": "",
             "correctAnswer": 2,
             "explain": "You should avoid using == and use === in these incidents: (1) If either value (aka side) in a comparison could be the true or false value. (2) If either value in a comparison could be of these specific values: 0, '', or [] -- empty array. In all other cases, you're safe to use ==. Not only is it safe, but in many cases it simplifies your code in a way that improves readability."
           },
@@ -373,6 +406,7 @@ let quizData = [
               "a < 20 ? false : true"
             ],
             "question": "If a === 5, which of the following is a correct use of the ternary operator and returns true?",
+            "code": "",
             "correctAnswer": 0,
             "explain": "Another form of conditional in JavaScript is the 'conditional operator,' often called the 'ternary operator. It's like a more concise form of a single if..else statement. If the test expression evaluates as true, the first clause true results, otherwise the second clause false results."
           },
@@ -384,6 +418,7 @@ let quizData = [
               "var $amount;"
             ],
             "question": "Which of these next variable names is NOT a valid identifier?",
+            "code": "",
             "correctAnswer": 2,
             "explain": "An identifier must start with a-z, A-Z, $, or _. It can then contain any of those characters plus the numerals 0-9."
           },
@@ -395,6 +430,7 @@ let quizData = [
               "When you declare a variable, it is available anywhere in that scope, as well as any lower/inner scopes."
             ],
             "question": "Which of these next statements is true about scopes?",
+            "code": "",
             "correctAnswer": 3,
             "explain": "When you declare a variable, it is available anywhere in that scope, as well as any lower/inner scopes. This means that if you declare a function within a function, the outer function is able to access the variables declared inside it's child function. However, the child/inner function cannot access it's parent/outer function's scope."
           },
@@ -406,6 +442,7 @@ let quizData = [
               "TypeError"
             ],
             "question": "What will happen if you try to access a variable's value in a scope where it's not available?",
+            "code": "",
             "correctAnswer": 1,
             "explain": "If you try to access a variable's value in a scope where it's not available, you'll get a ReferenceError thrown. The ReferenceError object represents an error when a non-existent variable is referenced. If you try to set a variable that hasn't been declared, you'll either end up creating a variable in the top-level global scope (bad!) or getting an error (depending on 'strict mode'). You can try this out in your console, and see for yourself."
           },
@@ -417,6 +454,7 @@ let quizData = [
               "You can opt in to strict mode for an individual function, or an entire file, depending on where you put the strict mode pragma."
             ],
             "question": "Which of these statements is NOT true about strict mode?",
+            "code": "",
             "correctAnswer": 2,
             "explain": "To invoke strict mode for an entire script, put the exact statement use strict;"
           },
@@ -428,6 +466,7 @@ let quizData = [
               "(function (){ console.log( 'Hello!' ); })();"
             ],
             "question": "Which of the lines below will print 'Hello!' to the console when executed?",
+            "code": "",
             "correctAnswer": 3,
             "explain": "Immediately Invoked Function Expressions (IIFE) is a way to execute a function expression. It requires an outer set of parentheses ( .. ) that surrounds the function expression. It also requires a final set of parentheses at the end of the expression, which is what actually executes the function expression referenced immediately before it."
           },
@@ -439,6 +478,7 @@ let quizData = [
               "A way to 'remember' and continue to access the scope of a function (its variables) even before the function started running."
             ],
             "question": "What is Polyfilling?",
+            "code": "",
             "correctAnswer": 1,
             "explain": "The word 'polyfill' is an invented term used to refer to taking the definition of a newer feature and producing a piece of code that's equivalent to the behavior, but is able to run in older JS environments. For example, ES6 defines a utility called Number.isNaN(..) to provide an accurate non-buggy check for NaN values, deprecating the original isNaN(..) utility. But it's easy to polyfill that utility so that you can start using it in your code regardless of whether the end user is in an ES6 browser or not."
           },
@@ -450,6 +490,7 @@ let quizData = [
               "Using a tool that converts your newer code into older code equivalents."
             ],
             "question": "What is Transpiling?",
+            "code": "",
             "correctAnswer": 3,
             "explain": "Transpiling is using a tool that converts your newer code into older code equivalents. The term combines the terms for transforming + compiling. Essentially, your source code is authored in the new syntax form, but what you deploy to the browser is the transpiled code in old syntax form. You typically insert the transpiler into your build process, similar to your code linter or your minifier."
           },
@@ -461,6 +502,7 @@ let quizData = [
               "alert(document.URL);"
             ],
             "question": "Which of the following expressions is controlled by JavaScript specification?",
+            "code": "",
             "correctAnswer": 0,
             "explain": "The document variable exists as a global variable when your code is running in a browser. It's not provided by the JS engine, nor is it particularly controlled by the JavaScript specification. Similarly alert(..) and console.log(..) is provided to your JS program by the browser, not by the JS engine itself. The call you make sends the message to the browser internals and it handles drawing, displaying the message box or logging the message to console."
           },
@@ -485,6 +527,7 @@ let quizData = [
               "The process of creating an Abstract Syntax Tree"
             ],
             "question": "What gives a program state?",
+            "code": "",
             "correctAnswer": 2,
             "explain": "A program is described as stateful if it is designed to remember preceding events or user interactions. The remembered information is called the state. Without state, a program could perform some tasks, but they would be extremely limited in functionality."
           },
@@ -496,6 +539,7 @@ let quizData = [
               "Code-Generation, Tokenizing/Lexing, Parsing"
             ],
             "question": "In a traditional compiled-language process, what is the correct order of the three main steps a program will undergo before executing?",
+            "code": "",
             "correctAnswer": 0,
             "explain": "Tokenizing/Lexing is the process of breaking up a string of characters into meaningful chunks called tokens. Parsing is the act of taking a stream of tokens and turning it into a tree of nested elements which represent the structure of the program. Code-Generation is the process of taking the tree and turning it into executable code."
           },
@@ -507,6 +551,7 @@ let quizData = [
               "Tokenizing/Lexing phase"
             ],
             "question": "In a traditional compiled-language process, during which phase is a string of characters broken into meaningful chunks?",
+            "code": "",
             "correctAnswer": 3,
             "explain": "A string of characters is broken into meaningful chunks during the tokenization/lexing phase. A token is a string with an assigned meaning. It is structured as a pair consisting of a token name and optional token value. Some common token names include: Identifiers, Keywords, Separators, operators, and literals."
           },
@@ -518,6 +563,7 @@ let quizData = [
               "Taking a stream of tokens and turning it into a tree of nested elements"
             ],
             "question": "Which of the following is the responsibility of Scope?",
+            "code": "",
             "correctAnswer": 1,
             "explain": "The Scope is responsible for maintaining a look-up list of all declared identifiers and enforcing a strict set of rules as to how these are accessible to currently executing code."
           },
@@ -528,7 +574,8 @@ let quizData = [
               "First, Compiler declares a variable (if not previously declared in the current scope), and second, when executing, Engine looks up the variable in Scope and assigns to it, if found.",
               "First, Engine declares a variable (if not previously declared in the current scope), and second, when executing, Compiler looks up the variable in Scope and assigns to it, if found."
             ],
-            "question": "Two distinct actions are taken for a variable assignment such as var a = 2;",
+            "question": "Two distinct actions are taken for a variable assignment such as ",
+            "code": "var a = 2;",
             "correctAnswer": 2,
             "explain": "Two distinct actions are taken for a variable assignment: First, Compiler declares a variable (if not previously declared in the current scope), and second, when executing, Engine looks up the variable in Scope and assigns to it, if found."
           },
@@ -540,6 +587,7 @@ let quizData = [
               "In console.log( a ); the reference to a is an RHS reference, while in a = 2; the reference to a is an LHS statement."
             ],
             "question": "Which of the statements below are true?",
+            "code": "",
             "correctAnswer": 3,
             "explain": "The reference to a in console.log( a ); is an RHS reference, because nothing is being assigned to a here. By contrast, in a = 2; the reference to a is an LHS reference, because we don't actually care what the current value is. We simply want to find the variable as a target for the = 2 assignment operation."
           },
@@ -551,6 +599,7 @@ let quizData = [
               "Engine starts looking for the variable at the currently executing Scope."
             ],
             "question": "Which of these next statements is true for traversing nested Scope?",
+            "code": "",
             "correctAnswer": 3,
             "explain": "Engine starts at the currently executing Scope, looks for the variable there, then if not found, keeps going up one level, and so on. If the outermost global scope is reached, the search stops, whether it finds the variable or not."
           },
@@ -562,6 +611,7 @@ let quizData = [
               "If an LHS look-up fails to ever find a variable, anywhere in the nested Scopes, this results in a ReferenceError being thrown by the Engine."
             ],
             "question": "Why does it matter whether we call it LHS or RHS?",
+            "code": "",
             "correctAnswer": 2,
             "explain": "The names matter because these two types of look-ups behave differently in the circumstance where the variable has not yet been declared (is not found in any consulted Scope). If an RHS look-up fails to ever find a variable, this results in a ReferenceError being thrown by the Engine. By contrast, if the Engine is performing an LHS look-up and arrives at the top floor (global Scope) without finding it, and if the program is not running in 'Strict Mode', then the global Scope will create a new variable of that name in the global scope."
           },
@@ -573,6 +623,7 @@ let quizData = [
               "Taking a stream of tokens and converting them into an abstract syntax tree"
             ],
             "question": "What is Parsing?",
+            "code": "",
             "correctAnswer": 3,
             "explain": "Parsing is typically thought of as taking a string of text and making sense of it. However, the string of text is actually converted into tokens first. Parsing is actually taking the tokens and making them useful by converting them into an abstract syntax tree"
           },
@@ -584,6 +635,7 @@ let quizData = [
               "Start-to-finish compilation and execution of our JavaScript program"
             ],
             "question": "What is the responsibility of a JavaScript engine?",
+            "code": "",
             "correctAnswer": 3,
             "explain": "The engine is the entirety of what reads and executes your code. Each browser has their own engine as does Node (built on Chrome's V8 JavaScript engine)."
           },
@@ -595,6 +647,7 @@ let quizData = [
               "LHS looks for assignment operator whereas RHS looks for the value to be assigned"
             ],
             "question": "What is the difference between an LHS lookup and an RHS lookup?",
+            "code": "",
             "correctAnswer": 0,
             "explain": "LHS stands for 'left hand side', and RHS stands for 'right hand side'. For a = b, the RHS looks for the value of b, and the LHS looks for the location of a in memory, so that it can update its value."
           },
@@ -605,7 +658,9 @@ let quizData = [
               "3",
               "4"
             ],
-            "question": "How many LHS look-ups are in the code below:\nfunction foo(a){\n  var b = a; \n  return a + b\n}\n\nvar c = foo( 2 );",
+            "question": "How many LHS look-ups are in the code below:",
+            "code": "",
+            "code": "function foo(a){\n  var b = a; \n  return a + b; \n\n} \n\nvar c = foo (2);",
             "correctAnswer": 2,
             "explain": "c = .., a = 2 (implicit param assignment) and b = .."
           },
@@ -616,7 +671,9 @@ let quizData = [
               "3",
               "4"
             ],
-            "question": "How many RHS look-ups are in the code below:\nfunction foo(a){\n  var b = a; \n  return a + b\n}\n\nvar c = foo( 2 );",
+            "question": "How many RHS look-ups are in the code below:",
+            "code": "",
+            "code": "function foo(a){\n  var b = a; \n  return a + b\n}\n\nvar c = foo( 2 );",
             "correctAnswer": 3,
             "explain": "foo(2.., = a;, a + .. and .. + b"
           },
@@ -628,6 +685,7 @@ let quizData = [
               "EvalError"
             ],
             "question": "If an RHS look-up fails to find a variable, what kind of error is thrown?",
+            "code": "",
             "correctAnswer": 0,
             "explain": "A ReferenceError is thrown when trying to dereference a variable that has not been declared. The only way for an RHS look-up to fail is if the variable has not been declared."
           },
@@ -643,6 +701,7 @@ let quizData = [
               "At author-time",
             ],
             "question": "When is scoping determined in JavaScript?",
+            "code": "",
             "correctAnswer": 1,
             "explain": "In JavaScript, scoping is lexical. It is based on where variables and blocks of scope are authored, by you, at write time, and thus is (mostly) set in stone by the time the lexer processes your code."
           },
@@ -653,7 +712,8 @@ let quizData = [
               "2 4 undefined",
               "undefined undefined undefined"
             ],
-            "question": "What is logged to the console when the following code is executed:\n\nfunction foo(a) {\n    var b = a * 2;\n    function bar(c) {\n        console.log( a, b, c );\n    }\n    bar(b * 3);\n}\nfoo( 2 );",
+            "question": "What is logged to the console when the following code is executed:",
+            "code": "function foo(a) {\n var b = a * 2;\n function bar(c) {\n\t console.log( a, b, c );\n }\n bar(b * 3);\n}\nfoo( 2 );",
             "correctAnswer": 1,
             "explain": "c is scoped to bar, a and b are scoped to foo. bar looks for a and b in its local scope, but can't find it, so checks its outer scope, foo, where it finds variables a and b. bar looks for c in its local scope, and finds it."
           },
@@ -664,7 +724,8 @@ let quizData = [
               "1",
               "2"
             ],
-            "question": "What is logged to the console when the following code is executed:\n\nfunction foo() {\n    const a = 2\n    function bar() {\n        console.log(a);\n    }\n    bar();\n}\nconst a = 1\nfoo();",
+            "question": "What is logged to the console when the following code is executed:",
+            "code": "function foo() {\n const a = 2\n function bar() {\n\t console.log(a);\n }\n bar();\n} \nconst a = 1 \nfoo();",
             "correctAnswer": 3,
             "explain": "c is scoped to bar, a and b are scoped to foo. bar looks for a and b in its local scope, but can't find it, so checks its outer scope, foo, where it finds variables a and b. bar looks for c in its local scope, and finds it."
           },
@@ -675,7 +736,8 @@ let quizData = [
               "5",
               "10"
             ],
-            "question": "What is logged to the console when the following code is executed:\n\nfunction bar(b) {\n    console.log(a);\n}\nfunction foo() {\n    const a = 5\n    bar(10);\n}\nfoo();",
+            "question": "What is logged to the console when the following code is executed:",
+            "code": "function bar(b) {\n console.log(a);\n} \nfunction foo() {\n const a = 5; \n bar(10);\n}\nfoo();",
             "correctAnswer": 1,
             "explain": "bar does not have a in its scope, so the engine looks in its outer scope, the global scope. It does not see an a, so it throws a ReferenceError."
           },
@@ -686,7 +748,8 @@ let quizData = [
               "7",
               "9"
             ],
-            "question": "What is logged to the console when the following code is executed:\n\nlet a;\nfunction bar(b) {\n    console.log(a);\n}\nfunction foo() {\n    const a = 7\n    bar(9);\n}\nfoo();",
+            "question": "What is logged to the console when the following code is executed:",
+            "code": "let a;\nfunction bar(b) {\n console.log(a); \n} \nfunction foo() {\n const a = 7; \n bar(9); \n} \nfoo();",
             "correctAnswer": 0,
             "explain": "bar does not have a in its scope, so the engine looks in its outer scope, the global scope. It sees a, but notices that there is no value assigned to it, thus it is undefined."
           },
@@ -697,7 +760,8 @@ let quizData = [
               "1",
               "undefined"
             ],
-            "question": "What is logged to the console when the following code is executed and the user clicks the button:\n\nconst button = document.querySelector('button');\n\nfunction bar() {\n    const b = 1\n    console.log(b)\n    button.addEventListener('click', bar)\n}",
+            "question": "What is logged to the console when the following code is executed and the user clicks the button:",
+            "code": "const button = document.querySelector('button');\n\nfunction bar() {\n    const b = 1\n    console.log(b)\n    button.addEventListener('click', bar)\n}",
             "correctAnswer": 1,
             "explain": "bar never gets called, so console.log(b) is never executed."
           },
@@ -708,7 +772,8 @@ let quizData = [
               "7",
               "undefined"
             ],
-            "question": "What is logged to the console when the following code is executed:\n\nfunction bar(b) {\n    function baz(a) {\n        console.log(a)\n    }\n    const a = 7\n}\nfunction foo(a) {\n    a = 5;\n    baz(a)\n}\nfoo(4);",
+            "question": "What is logged to the console when the following code is executed:",
+            "code": "function bar(b) {\n    function baz(a) {\n        console.log(a)\n    }\n    const a = 7\n}\nfunction foo(a) {\n    a = 5;\n    baz(a)\n}\nfoo(4);",
             "correctAnswer": 1,
             "explain": "We first call foo with a value of 4. Inside foo, a's value is changed from 4 to 5. We then try to call baz. baz is not in foo's scope, so the engine looks at the outer scope, the global scope. It does not find baz, so it throws a ReferenceError."
           },
@@ -720,6 +785,7 @@ let quizData = [
               "this and with"
             ],
             "question": "Which two mechanisms in JavaScript can \"cheat\" lexical scope?",
+            "code": "",
             "correctAnswer": 0,
             "explain": "with and eval are the only mechanisms that allow code to be executed dynamically which means they can 'cheat' lexical scope."
           },
@@ -731,6 +797,7 @@ let quizData = [
               "They are not implemented in all browsers"
             ],
             "question": "There are two mechanisms in JavaScript that can \"cheat\" lexical scope. Why should they not be used?",
+            "code": "",
             "correctAnswer": 1,
             "explain": "If the Engine finds an eval(..) or with in the code, it essentially has to assume that all its awareness of identifier location may be invalid, because it cannot know at lexing time exactly what code you may pass to eval(..) to modify the lexical scope, or the contents of the object you may pass to with to create a new lexical scope to be consulted."
           },
@@ -748,6 +815,7 @@ let quizData = [
               "They are each wrapped in an IIFE"
             ],
             "question": "What is going on under the hood when importing modules to prevent collisions?",
+            "code": "",
             "correctAnswer": 3,
             "explain": "IIFEs are used to 'insert' code without collisions. The IIFE gives each module its own scope which allows it to use whatever non-global variables it wants without side effects."
           },
@@ -759,6 +827,7 @@ let quizData = [
               "You have to name all functions, so this is a moot point"
             ],
             "question": "What is the main reason you should name your functions?",
+            "code": "",
             "correctAnswer": 2,
             "explain": "If you are debugging an error, you might check the stack trace. If you encounter an anonymous function in the stack trace, you can't easily know which function it is referring to."
           },
@@ -768,6 +837,7 @@ let quizData = [
               "False",
             ],
             "question": "JavaScript did not have a concept of block scoping before ES6",
+            "code": "",
             "correctAnswer": 1,
             "explain": "Technically, it had block scoping in catch blocks as early as ES3. Standard block scoping was introduced in ES6 via let and const."
           },
@@ -778,7 +848,9 @@ let quizData = [
               "ReferenceError",
               "null"
             ],
-            "question": "What will be logged to the console upon execution of the code below:\n\n{let i = 0}\nconsole.log(i)",
+            "question": "What will be logged to the console upon execution of the code below:",
+            "code": "",
+            "code": "{let i = 0}\nconsole.log(i);",
             "correctAnswer": 2,
             "explain": "Because let is block scoped, i is only within scope inside the curly braces in the first line, not in the global scope."
           },
@@ -789,7 +861,9 @@ let quizData = [
               "undefined",
               "0"
             ],
-            "question": "What will be logged to the console upon execution of the code below:\n\n{var i = 0}\nconsole.log(i)",
+            "question": "What will be logged to the console upon execution of the code below:",
+            "code": "",
+            "code": "{var i = 0}\nconsole.log(i);",
             "correctAnswer": 3,
             "explain": "Because var is not block scoped, i is stored in the global scope."
           },
@@ -806,7 +880,9 @@ let quizData = [
               "undefined",
               "a"
             ],
-            "question": "What will be logged to the console upon execution of the code below:\n\na = 3\nvar a;\nconsole.log(a)",
+            "question": "What will be logged to the console upon execution of the code below:",
+            "code": "",
+            "code": "a = 3\nvar a;\nconsole.log(a);",
             "correctAnswer": 0,
             "explain": "var a is 'hoisted' before the other lines of code are executed, thus by the time the engine executes the assignment and console logging, var a will have been declared and available."
           },
@@ -817,7 +893,8 @@ let quizData = [
               "null",
               "3"
             ],
-            "question": "What will be logged to the console upon execution of the code below:\n\nconsole.log(a)\nvar a = 3;",
+            "question": "What will be logged to the console upon execution of the code below:",
+            "code": "console.log(a)\nvar a = 3;",
             "correctAnswer": 0,
             "explain": "var a is 'hoisted' before the other lines of code are executed. By the time the engine executes the console.log, var a will have been declared, but the definition will not have occurred."
           },
@@ -828,7 +905,8 @@ let quizData = [
               "'hello'",
               "ReferenceError"
             ],
-            "question": "What will be logged to the console upon execution of the code below:\n\nfoo();\nvar foo = function() {\n    console.log('hello')\n};",
+            "question": "What will be logged to the console upon execution of the code below:",
+            "code": "foo();\nvar foo = function() {\n    console.log('hello')\n};",
             "correctAnswer": 1,
             "explain": "var foo is 'hoisted' but the function is not. By the time the engine executes the first line, var foo will have been declared, so it is not a ReferenceError. We try to call it as a function, but its value is undefined which leaves us with a TypeError."
           },
@@ -839,7 +917,8 @@ let quizData = [
               "1 and then 2",
               "2 and then 1"
             ],
-            "question": "What will be logged to the console upon execution of the code below:\n\nfoo();\nvar foo;\nfunction foo() {\n\tconsole.log( 1 );\n}\nfoo = function() {\n\tconsole.log( 2 );\n};",
+            "question": "What will be logged to the console upon execution of the code below:",
+            "code": "foo();\nvar foo;\nfunction foo() {\n\tconsole.log( 1 );\n}\nfoo = function() {\n\tconsole.log( 2 );\n};",
             "correctAnswer": 0,
             "explain": "Because functions are 'hoisted' before variables, function foo gets hoisted before var foo, and ultimately var foo is ignored."
           },
@@ -849,6 +928,7 @@ let quizData = [
               "False",
             ],
             "question": "Declarations themselves are hoisted, but assignments, even assignments of function expressions, are not hoisted.",
+            "code": "",
             "correctAnswer": 0,
             "explain": "The compiler does a first pass through your code to determine lexical scope. This is what is known as 'hoisting'."
           },
@@ -866,6 +946,7 @@ let quizData = [
               "When a function is used as a callback"
             ],
             "question": "What is closure?",
+            "code": "",
             "correctAnswer": 2,
             "explain": "Another way to explain closure is to say that functions always have access to their lexical scope, no matter how or when they are called."
           },
@@ -876,7 +957,8 @@ let quizData = [
               "1",
               "2"
             ],
-            "question": "What is logged to the console after executing the code below:\nvar a = 1\nfunction foo() {\n  var a = 2;\n  function bar() {\n    console.log( a );\n  }\n  return bar;\n}\nvar baz = foo();\n baz();",
+            "question": "What is logged to the console after executing the code below:",
+            "code": "var a = 1\nfunction foo() {\n  var a = 2;\n  function bar() {\n    console.log( a );\n  }\n  return bar;\n}\nvar baz = foo();\nbaz();",
             "correctAnswer": 3,
             "explain": "foo returns the function bar which is assigned to baz. bar still has access to a in foo even after foo has been called because of closure."
           },
@@ -888,6 +970,7 @@ let quizData = [
               "When this is used in a function"
             ],
             "question": "When is closure observed?",
+            "code": "",
             "correctAnswer": 2,
             "explain": "Because closure is just a function accessing lexical scope when it's executed outside of its lexical scope, that can only happen if the function is passed around as a variable"
           },
@@ -896,7 +979,8 @@ let quizData = [
               "yes",
               "no",
             ],
-            "question": "Is closure observed when the code below is executed:\nfunction wait(message) {\n  setTimeout( function timer(){\n    console.log( message );\n  }, 1000 );\n}\nwait( \"Hello!\" );",
+            "question": "Is closure observed when the code below is executed:",
+            "code": "function wait(message) {\n  setTimeout( function timer(){\n    console.log( message );\n  }, 1000 );\n}\nwait( \"Hello!\" );",
             "correctAnswer": 0,
             "explain": "wait gets executed immediately, but timer executes every 1000ms, and it still can access message."
           },
@@ -907,7 +991,8 @@ let quizData = [
               "6 is printed 5 times all at 6 seconds",
               "1, 2, 3, 4, 5 are printed all at 6 seconds"
             ],
-            "question": "What happens when this code is executed:\n\nfor (var i=1; i<=5; i++) {\n  setTimeout( function timer(){\n    console.log( i );\n  }, i*1000 );\n}",
+            "question": "What happens when this code is executed:",
+            "code": "for (var i=1; i<=5; i++) {\n  setTimeout( function timer(){\n    console.log( i );\n  }, i*1000 );\n}",
             "correctAnswer": 0,
             "explain": "setTimeout is executed immediately which means the i in i*1000 is what you would expect. However, timer does not get executed immediately. By the time timer is executed, the loop is finished, and i has a value of 6."
           },
@@ -929,6 +1014,7 @@ let quizData = [
               "False",
             ],
             "question": "When 'this' is used in a function, it refers to that function itself.",
+            "code": "",
             "correctAnswer": 1,
             "explain": "'this' can refer to many different elements depending on how the function is called."
           },
@@ -938,6 +1024,7 @@ let quizData = [
               "False",
             ],
             "question": "When 'this' is used in a function, it refers to that function's scope.",
+            "code": "",
             "correctAnswer": 1,
             "explain": "'this' can refer to many different elements depending on how the function is called."
           },
@@ -949,6 +1036,7 @@ let quizData = [
               "It helps filter out less experienced JavaScript developers"
             ],
             "question": "Why is `this` helpful?",
+            "code": "",
             "correctAnswer": 0,
             "explain": "The more complex your usage pattern is, the more clearly you'll see that passing context around as an explicit parameter is often messier than passing around a this context."
           },
@@ -959,7 +1047,8 @@ let quizData = [
               "1",
               "2"
             ],
-            "question": "What is logged to the console in the code below:\nfunction foo() {\n  var a = 2;\n  this.bar();\n}\nfunction bar() {\n  var a = 1\n  console.log( this.a );\n}\nfoo();   ",
+            "question": "What is logged to the console in the code below:",
+            "code": "function foo() {\n  var a = 2;\n  this.bar();\n}\nfunction bar() {\n  var a = 1\n  console.log( this.a );\n}\nfoo();   ",
             "correctAnswer": 0,
             "explain": "In both uses of the keyword this, it refers to the global object. Because there is no a in the global object, it is undefined."
           },
@@ -969,11 +1058,12 @@ let quizData = [
               "False",
             ],
             "question": "`this` is actually a binding that is made when a function is invoked",
+            "code": "",
             "correctAnswer": 0,
             "explain": "Because this changes depending on HOW the function was called, its value is unknown at the time the function is defined. It is not like lexical scope which is determined at function definition."
           },
         ]
-      }, // End of chapters object inside array
+      },
       {
         "chapter_id": 2,
         "chapter_name": "this All Makes Sense Now",
@@ -986,6 +1076,7 @@ let quizData = [
               "WHY"
             ],
             "question": "____ a function is called matters the most when determining the value of `this`.",
+            "code": "",
             "correctAnswer": 1,
             "explain": "While knowing where the function is called is helpful, the most important part is the HOW. Was it called with call or apply? Or with the new keyword? Was it called via an object? Or was it called regularly?"
           },
@@ -997,6 +1088,7 @@ let quizData = [
               "The location in code where a function is declared"
             ],
             "question": "What is a call-site?",
+            "code": "",
             "correctAnswer": 1,
             "explain": "The call-site is simply where a function is called."
           },
@@ -1007,7 +1099,8 @@ let quizData = [
               "pony",
               "rocket ship"
             ],
-            "question": "What is logged to the console when the following code is executed:\n 'use strict'\nfunction foo() {\n  var a = 'pony'\n  console.log( this.a );\n}\nvar a = 'rocket ship';\nfoo();",
+            "question": "What is logged to the console when the following code is executed: ",
+            "code": "'use strict'\nfunction foo() {\n  var a = 'pony'\n  console.log( this.a );\n}\nvar a = 'rocket ship';\nfoo();",
             "correctAnswer": 1,
             "explain": "When not in strict mode, default binding rules are valid which means this would be the global object, and the answer would be 'rocket ship'. However, since we are in strict mode, default binding rules do not apply, so this is undefined. Accessing a property of undefined results TypeError."
           },
@@ -1018,7 +1111,8 @@ let quizData = [
               "\"Joanna\"",
               "\"Ralphie\""
             ],
-            "question": "What is logged to the console when the following code is executed:\n 'use strict'\nfunction printName() {\n  console.log( this.name );\n}\nvar person = {\n  name: 'Ralphie',\n  printName: printName\n};\nperson.printName();\nlet name = 'Joanna'",
+            "question": "What is logged to the console when the following code is executed:",
+            "code": "'use strict'\nfunction printName() {\n  console.log( this.name );\n}\nvar person = {\n  name: 'Ralphie',\n  printName: printName\n};\nperson.printName();\nlet name = 'Joanna';",
             "correctAnswer": 3,
             "explain": "person has a key printName with a value of printName which refers to the function printName. When person.printName() is executed, the function reference that is stored in person.printName (printName) is executed within the person context, thus the implicit binding rules say that this is person."
           },
@@ -1029,7 +1123,8 @@ let quizData = [
               "\"Joanna\"",
               "\"Ralphie\""
             ],
-            "question": "What is logged to the console when the following code is executed:\nvar firstName = 'Joanna';\nfunction printFirstName() {\n  console.log(this.firstName);\n}\nvar person = {\n  firstName: 'Ralphie',\n  printfirstName: printFirstName(),\n};",
+            "question": "What is logged to the console when the following code is executed: ",
+            "code": "var firstName = 'Joanna';\nfunction printFirstName() {\n  console.log(this.firstName);\n}\nvar person = {\n  firstName: 'Ralphie',\n  printfirstName: printFirstName(),\n};",
             "correctAnswer": 2,
             "explain": "This one is a bit tricky. When printFirstName() is executed, the call-site actually does not have a context object because the call-site does not use the person context to reference the function. The default binding rule is therefore used to explain why the this falls back to the global object where there is a var with firstName of 'Joanna'."
           }
@@ -1046,7 +1141,8 @@ let quizData = [
               "SyntaxError",
               "object"
             ],
-            "question": "What is typeof []?",
+            "question": "What is ",
+            "code": "typeof []",
             "correctAnswer": 3,
             "explain": "Arrays are also a form of objects, with extra behavior. The organization of contents in arrays is slightly more structured than for general objects."
           },
@@ -1057,7 +1153,8 @@ let quizData = [
               "object",
               "function"
             ],
-            "question": "What is typeof function () {}?",
+            "question": "What is ",
+            "code": "typeof function () {}",
             "correctAnswer": 3,
             "explain": "Functions are technically callable objects, thus they are a type of an object. typeof function () {} will return 'function'.",
           },
@@ -1069,6 +1166,7 @@ let quizData = [
               "None of the above"
             ],
             "question": "What is String in JavaScript?",
+            "code": "",
             "correctAnswer": 2,
             "explain": "strings in JavaScript are immutable and have no properties/methods. When you run str.length or str.charAt(3), str is coerced into the object String which has properties length and method charAt.",
           },
@@ -1079,7 +1177,8 @@ let quizData = [
               "in obj.a",
               "in window"
             ],
-            "question": "Where is the value 2 stored in var obj = {a: 2}?",
+            "question": "Where is the value 2 stored in ",
+            "code": "var obj = {a: 2}",
             "correctAnswer": 1,
             "explain": "Values in key-value pairs are not actually stored in the object. The object stores the key and a reference to the value. Exactly how/where it is stored is dependent on the engine implementation.",
           },
@@ -1089,6 +1188,7 @@ let quizData = [
               "false",
             ],
             "question": "In objects, property names are always strings",
+            "code": "",
             "correctAnswer": 0,
             "explain": "If you use any other value besides a string (primitive) as the property, it will first be converted to a string. This even includes numbers, which are commonly used as array indexes, so be careful not to confuse the use of numbers between objects and arrays.",
           }
@@ -1104,6 +1204,7 @@ let quizData = [
               "False",
             ],
             "question": "JavaScript classes work like Ruby's and Python's dynamic classes and unlike Java's and C++'s static classes.",
+            "code": "",
             "correctAnswer": 0,
             "explain": "JavaScript ES6 classes are objects, which allows us to add and remove fields and methods at runtime."
           },
@@ -1115,6 +1216,7 @@ let quizData = [
               "It's not possible to inherit behaviors in JavaScript because classes are an abstraction over objects."
             ],
             "question": "Which of the following is true about classes in JavaScript?",
+            "code": "",
             "correctAnswer": 0,
             "explain": "By default, inheritance in JavaScript works by linking two classes (objects) together, not by copying one over to another. Class copy behavior can be emulated using the mixin pattern (both explicit and implicit), but this usually leads to ugly and brittle syntax like explicit pseudo-polymorphism (OtherObj.methodName.call(this, ...)), which often results in harder to understand and maintain code.",
           },
@@ -1124,6 +1226,7 @@ let quizData = [
               "False",
             ],
             "question": "JavaScript does not provide a native mechanism for 'multiple inheritance'.",
+            "code": "",
             "correctAnswer": 0,
             "explain": "strings in JavaScript are immutable and have no properties/methods. When you run str.length or str.charAt(3), str is coerced into the object String which has properties length and method charAt.",
           },
@@ -1135,6 +1238,7 @@ let quizData = [
               "Explicit mixins are native to JavaScript while implicit mixins are not."
             ],
             "question": "What is the main difference between an explicit mixin and an implicit mixin?",
+            "code": "",
             "correctAnswer": 2,
             "explain": "Implicit mixin is when there isn't an explicit mixin function that copies all of the properties from the parent to the child. Rather, it is when the parent method is called with the this bound to the child's this",
           },
@@ -1146,6 +1250,7 @@ let quizData = [
               "None of the above"
             ],
             "question": "Implicit mixin is when there isn't an explicit mixin function that copies all of the properties from the parent to the child. Rather, it is when the parent method is called with the this bound to the child's this",
+            "code": "",
             "correctAnswer": 2,
             "explain": "Implicit mixins always require absolutely referring to the parent, and explicit mixins require absolutely referring to the parent when shadowing is desired.",
           }
@@ -1162,7 +1267,8 @@ let quizData = [
               "2",
               "3"
             ],
-            "question": "What will be logged to the console when the following code is executed: 'use strict' \n var anotherObject = { a: 2 }; \n var myObject = Object.create( anotherObject ); var a = 3; console.log(myObject.a);",
+            "question": "What will be logged to the console when the following code is executed: ",
+            "code": "'use strict' \nvar anotherObject = { a: 2 }; \nvar myObject = Object.create( anotherObject ); \nvar a = 3; \nconsole.log(myObject.a);",
             "correctAnswer": 2,
             "explain": "var myObject = Object.create( anotherObject ); links myObject with anotherObject via the prototype chain. If a key does not exist in myObject, it follows its prototype chain and looks for the key in anotherObject."
           },
@@ -1172,6 +1278,7 @@ let quizData = [
               "False",
             ],
             "question": "A for..in loop only iterates over the specified object",
+            "code": "",
             "correctAnswer": 1,
             "explain": "It also iterates over all enumerable properties in its prototype chain.",
           },
@@ -1182,7 +1289,8 @@ let quizData = [
               "2 3",
               "2 2"
             ],
-            "question": "What is logged to the console when the following code is executed: var anotherObject = { a: 2 }; var myObject = Object.create( anotherObject ); myObject.a++; console.log(anotherObject.a, myObject.a)",
+            "question": "What is logged to the console when the following code is executed: ",
+            "code": "var anotherObject = { a: 2 }; \nvar myObject = Object.create( anotherObject ); \nmyObject.a++; \nconsole.log(anotherObject.a, myObject.a)",
             "correctAnswer": 2,
             "explain": "Though it may appear that myObject.a++ should (via delegation) look-up and just increment the anotherObject.a property itself in place, instead the ++ operation corresponds to myObject.a = myObject.a + 1. The result is [[Get]] looking up a property via [[Prototype]] to get the current value 2 from anotherObject.a, incrementing the value by one, then [[Put]] assigning the 3 value to a new shadowed property a on myObject.",
           },
@@ -1192,6 +1300,7 @@ let quizData = [
               "False",
             ],
             "question": "It is better to think about object oriented programming in JavaScript as Object Links than Classes",
+            "code": "",
             "correctAnswer": 0,
             "explain": "JavaScript simply does not have classes. ES6 classes are syntactic sugar on top of what are simply just objects.",
           },
@@ -1202,7 +1311,8 @@ let quizData = [
               "'Bark' 'sleeping...'",
               "'Meow' ReferenceError"
             ],
-            "question": "What will be logged to the console when the following code is executed: var Dog = { speak: function () { console.log('Bark'); }, sleep: function () { console.log('sleeping...') } }; var Cat = Object.create(Dog); Cat.speak = function () { console.log('Meow') }; Cat.speak()Cat.sleep()",
+            "question": "What will be logged to the console when the following code is executed: ",
+            "code": "var Dog = {\n    speak: function() {\n        console.log('Bark');\n     },\n     sleep: function() {\n        console.log('sleeping...');\n     },\n};\nvar Cat = Object.create(Dog);\nCat.speak = function() {\n    console.log('Meow')\n};\nCat.speak();\nCat.sleep();",
             "correctAnswer": 1,
             "explain": "Cat has a property speak, but it does not have a property sleep. Because Cat was linked to Dog via Object.create(), and Dog has a property sleep, Dogs sleep property was called.",
           }
@@ -1220,6 +1330,7 @@ let quizData = [
               "Delegation-Oriented Design involves explicit and implicit mixins"
             ],
             "question": "What is the main fundamental concept of Delegation-Oriented Design in comparison to the traditional Object-Oriented Design?",
+            "code": "",
             "correctAnswer": 2,
             "explain": "Fundamentally, the prototype chain does not have a concept of 'copying' or 'parent creating child'. All it does is chain objects together."
           },
@@ -1229,6 +1340,7 @@ let quizData = [
               "False",
             ],
             "question": "In OLOO design, shadowing is a helpful tool used to make API design more robust",
+            "code": "",
             "correctAnswer": 1,
             "explain": "Having name collisions creates awkward/brittle syntax to disambiguate references (see Chapter 4), and we want to avoid that if we can.",
           },
@@ -1238,6 +1350,7 @@ let quizData = [
               "False",
             ],
             "question": "In general, with [[Prototype]] delegation involved, you want state to be on the delegators, not on the delegate",
+            "code": "",
             "correctAnswer": 0,
             "explain": "In OOD, it is easy to relatively access the state of the parent. In OLOO, this is not the case. There is no easy way to specifically access state relatively, so it makes sense to hold state on the delegators.",
           },
@@ -1247,6 +1360,7 @@ let quizData = [
               "False",
             ],
             "question": "If you make B linked to A, and then try to link A to B, you will get an error.",
+            "code": "",
             "correctAnswer": 1,
             "explain": "You cannot create a cycle where two or more objects are mutually delegated (bi-directionally) to each other.",
           },
@@ -1258,6 +1372,7 @@ let quizData = [
               "ES6 is not supported by all browsers"
             ],
             "question": "Which statement below best describes why OLOO is a better mental model than OOD in JavaScript",
+            "code": "",
             "correctAnswer": 0,
             "explain": "With OLOO there are just objects linked to each other, without needing all the cruft and confusion of things that look (but don't behave!) like classes, with constructors and prototypes and new calls. Ask yourself: if I can get the same functionality with OLOO style code as I do with 'class' style code, but OLOO is simpler and has less things to think about, isn't OLOO better?",
           }
@@ -1282,6 +1397,7 @@ let quizData = [
                 "int"
             ],
             "question": "Which is a valid JavaScript type for numerical data?",
+            "code": "",
             "correctAnswer": 0,
             "explain": "Unlike many coding languages, JavaScript has only one primitive numerical type: number. This is used for both integers and floating point values."
           },
@@ -1292,7 +1408,8 @@ let quizData = [
                 "object",
                 "array"
             ],
-            "question": "What is the output of console.log(typeof [])?",
+            "question": "What is the output of ",
+            "code": "console.log(typeof [])",
             "correctAnswer": 2,
             "explain": "In JavaScript, arrays are a type of object. There is no 'array' type."
           },
@@ -1303,7 +1420,8 @@ let quizData = [
                 "undefined",
                 "TypeError"
             ],
-            "question": "What will be logged to the console when the following code is executed: var a = null; console.log(!a && typeof a === 'object');",
+            "question": "What will be logged to the console when the following code is executed: ",
+            "code": "var a = null; \nconsole.log(!a && typeof a === 'object');",
             "correctAnswer": 0,
             "explain": "It would have been nice if typeof null returned 'null', but this original bug in JS has persisted for nearly two decades, and will likely never be fixed because there's too much existing web content that relies on its buggy behavior that 'fixing' the bug would create more 'bugs' and break a lot of web software."
           },
@@ -1315,6 +1433,7 @@ let quizData = [
                 "if(typeof a !== 'undefined')..."
             ],
             "question": "What is a good way to safely check if a variable has been declared?",
+            "code": "",
             "correctAnswer": 3,
             "explain": "All of the other options will throw an error if a has not been declared."
           },
@@ -1325,7 +1444,8 @@ let quizData = [
                 "1",
                 "2"
             ],
-            "question": "What will be logged to the console when the following code is executed: function a(b, c) { var d = 5 return d + 1 }; console.log(a.length);",
+            "question": "What will be logged to the console when the following code is executed: ",
+            "code": "function a(b, c) { \nvar d = 5; \n return d + 1; \n}; \nconsole.log(a.length);",
             "correctAnswer": 3,
             "explain": ""
           },
@@ -1342,6 +1462,7 @@ let quizData = [
 
             ],
             "question": "Once an array is assigned data of a particular type, it can only hold data of that type.",
+            "code": "",
             "correctAnswer": 1,
             "explain": "In JS, arrays are simple containers that can hold any combination of types, including all primitive types, objects, other arrays, and even functions."
           },
@@ -1352,7 +1473,8 @@ let quizData = [
                 "null",
                 "NaN"
             ],
-            "question": "What is the output of console.log(typeof NaN)?",
+            "question": "What is the output of ",
+            "code": "console.log(typeof NaN)",
             "correctAnswer": 1,
             "explain": "An oddity of JavaScript, the property NaN ('not a number') is actually of type 'number'."
           },
@@ -1362,6 +1484,7 @@ let quizData = [
                 "False",
             ],
             "question": "What is 0.1 + 0.2 === 0.3?",
+            "code": "",
             "correctAnswer": 1,
             "explain": "The most (in)famous side effect of using binary floating-point numbers (which, remember, is true of all languages that use IEEE 754 -- not just JavaScript as many assume/pretend) is that representations of decimals are not exact."
           },
@@ -1371,6 +1494,7 @@ let quizData = [
               "False",
             ],
             "question": "JavaScript strings are immutable",
+            "code": "",
             "correctAnswer": 0,
             "explain": "You might have thought of string methods as mutating the original string. However, all of the string methods that alter its contents must create and return new strings."
           },
@@ -1382,6 +1506,7 @@ let quizData = [
                 "undefined"
             ],
             "question": "What is 1 / 0 in JavaScript?",
+            "code": "",
             "correctAnswer": 1,
             "explain": "In JS, this operation is well-defined and results in the value Infinity (aka Number.POSITIVE_INFINITY)."
           },
@@ -1398,7 +1523,8 @@ let quizData = [
                 "class",
                 "function"
             ],
-            "question": "What is logged to the console after the following code is executed: var a = new String( 'abc ); console.log(typeof a); ",
+            "question": "What is logged to the console after the following code is executed: ",
+            "code": "var a = new String( 'abc ); \nconsole.log(typeof a); ",
             "correctAnswer": 1,
             "explain": "The result of the constructor form of value creation (new String('abc')) is an object wrapper around the primitive ('abc') value. Importantly, typeof shows that these objects are not their own special types, but more appropriately they are subtypes of the object type."
           },
@@ -1410,6 +1536,7 @@ let quizData = [
                 "Date()"
             ],
             "question": "Which native was added in ES6?",
+            "code": "",
             "correctAnswer": 1,
             "explain": "Symbol() was added in ES6"
           },
@@ -1421,6 +1548,7 @@ let quizData = [
                 "They allow for the use of ES6 classes"
             ],
             "question": "What purpose do boxing wrappers serve?",
+            "code": "",
             "correctAnswer": 1,
             "explain": "Ever wondered why you can call str.length or str.toUpperCase()? Or maybe you just accepted it as fact and didn't think much about it. Primitive types such as string or number get automatically wrapped by boxing wrappers as needed which have methods such as length and toUpperCase."
           },
@@ -1432,6 +1560,7 @@ let quizData = [
                 "Boxing is converting from primitive to object wrapper, and unboxing is converting from object wrapper to primitive."
             ],
             "question": "What is 'boxing' and 'unboxing'?",
+            "code": "",
             "correctAnswer": 3,
             "explain": "Boxing is wrapping a primitive value, and unboxing is extracting the primitive value from a wrapper. Boxing/Unboxing can be done explicitly or implicitly."
           },
@@ -1441,6 +1570,7 @@ let quizData = [
                 "False"
             ],
             "question": "var a = new String( 'abc' ); is more performant than var a = 'abc';",
+            "code": "",
             "correctAnswer": 1,
             "explain": "You might think that it would be more performant to use the object wrapper form, so that the engine doesn't have to wrap the primitive. However, engines have been optimizing based on the assumption that almost everyone constructs using primitives, thus they are actually more performant."
           },
@@ -1456,6 +1586,7 @@ let quizData = [
                 "False",
             ],
             "question": "Everyone has more or less agreed that implicit coercion is a good feature in JavaScript",
+            "code": "",
             "correctAnswer": 1,
             "explain": "There are rules for linters to disallow implicit coercion because it can happen unexpectedly if the developer isn't careful. Implicit coercion is a valuable tool once you fully understand how it works."
           },
@@ -1466,7 +1597,8 @@ let quizData = [
                 "6",
                 "42"
             ],
-            "question": "What is logged to the console when the following code is executed: var a = '4'; var b = '2'; console.log(a + b);",
+            "question": "What is logged to the console when the following code is executed: ",
+            "code": "var a = '4'; \nvar b = '2'; \nconsole.log(a + b);",
             "correctAnswer": 1,
             "explain": "+ means concatenation when any of the operands are strings"
           },
@@ -1475,7 +1607,8 @@ let quizData = [
                 "Nothing is actually logged to the console",
                 "{}",
             ],
-            "question": "What is logged to the console when the following code is executed: var a = {}; if (a) { console.log(a); }",
+            "question": "What is logged to the console when the following code is executed: ",
+            "code": "var a = {}; \nif (a) { \n console.log(a); \n}",
             "correctAnswer": 1,
             "explain": "There is no such thing as a falsy object in JavaScript"
           },
@@ -1486,7 +1619,8 @@ let quizData = [
                 "45",
                 "'45'"
             ],
-            "question": "What is logged to the console when the following code is executed: console.log(40 + 0 + '5')",
+            "question": "What is logged to the console when the following code is executed: ",
+            "code": "console.log(40 + 0 + '5')",
             "correctAnswer": 0,
             "explain": "+ means concatenation when any of the operands are strings"
           },
@@ -1496,7 +1630,8 @@ let quizData = [
                 "5 2 6 0 9",
                 "0",
             ],
-            "question": "What is logged to the console when the following code is executed: var a = [5,2,6,0,9]; a.forEach(num => { if (num) { // ...do stuff } else { console.log(num); } });",
+            "question": "What is logged to the console when the following code is executed: ",
+            "code": "var a = [5,2,6,0,9]; \na.forEach(num => { \n if (num) { \n// ...do stuff \n } else { \n  console.log(num); \n } \n});",
             "correctAnswer": 2,
             "explain": "0 is actually falsy which can be unexpected. If you have a list of values and you want to make sure none of them are undefined or null you can't just check if they are truthy."
           },
@@ -1511,7 +1646,8 @@ let quizData = [
                 "It is a statement containing multiple expressions",
                 "It is an expression containing multiple statements",
             ],
-            "question": "What best describes the code, var a = 3 * 6;",
+            "question": "What best describes the code, ",
+            "code": "var a = 3 * 6;",
             "correctAnswer": 0,
             "explain": "Statements are to English sentences as expressions are to English phrases"
           },
@@ -1522,7 +1658,8 @@ let quizData = [
                 "84",
                 "undefined"
             ],
-            "question": "What is logged to the console when the following code is executed: var a = 42; var b = a++; console.log(a + b);",
+            "question": "What is logged to the console when the following code is executed: ",
+            "code": "var a = 42;\nvar b = a++; \nconsole.log(a + b);",
             "correctAnswer": 1,
             "explain": "a++ increments a by 1, but the return value of a++ is the previous value of a. So when we get to line 3, a has a value of 43 and b has a value of 42."
           },
@@ -1533,7 +1670,8 @@ let quizData = [
                 "false",
                 "TypeError"
             ],
-            "question": "What is logged to the console when the following code is executed: var obj = { a: {  b: 'c' } } console.log(obj.a && obj.a.b)",
+            "question": "What is logged to the console when the following code is executed: ",
+            "code": "var obj = { \n  a: {  \n   b: 'c' \n  } \n} \nconsole.log(obj.a && obj.a.b)",
             "correctAnswer": 0,
             "explain": "The && operator doesn't actually return true if both operands are truthy. It returns the last value. Ever get an error when you try to access a.length when a is undefined? You could instead try a && a.length."
           },
@@ -1544,6 +1682,7 @@ let quizData = [
                 "A deprecated system that used to replace commas with semicolons as needed",
             ],
             "question": "What is Automatic Semicolon Insertion (ASI) in JavaScript?",
+            "code": "",
             "correctAnswer": 0,
             "explain": "There are many opinions on whether semicolons should be used in JavaScript. Per the spec, ASI is an error fixing mechanism which suggests that developers should use semicolons."
           },
@@ -1554,7 +1693,8 @@ let quizData = [
                 "'Expression 1 is true. Expression 2 is true.'",
                 "''"
             ],
-            "question": "What is logged to the console when the following code is executed: var a = b = 1; var c = 2; var d = ''; if (a === b || a === b && b === c) { d += 'Expression 1 is true. '; } if ((a === b || a === b) && b === c) { d += 'Expression 2 is true.'; } console.log(d);",
+            "question": "What is logged to the console when the following code is executed: ",
+            "code": "var a = b = 1; \nvar c = 2; \nvar d = ''; \nif (a === b || a === b && b === c) { \n d += 'Expression 1 is true. '; \n} \nif ((a === b || a === b) && b === c) { \n d += 'Expression 2 is true.'; \n} \nconsole.log(d);",
             "correctAnswer": 0,
             "explain": "You might expect JavaScript expressions to work left to right with the exception that everything in parentheses gets executed first. That is not the case. You might know that, in math, the '' operator executes before '+'. So, 1 + 1 5 = 6, not 7. Similarly, in JavaScript, the && operator executes before ||."
           },
@@ -1576,6 +1716,7 @@ let quizData = [
                 "False",
             ],
             "question": "console.log() is always executed synchronously",
+            "code": "",
             "correctAnswer": 1,
             "explain": "While it is up to the hosting environment how they want to implement console, it is often asynchronous because blocking I/O takes a lot of time."
           },
@@ -1584,7 +1725,8 @@ let quizData = [
                 "The html for google.com",
                 "undefined",
             ],
-            "question": "What will be logged to the console when the following code is executed: var data = ajax( 'https://google.com' ); console.log( data );",
+            "question": "What will be logged to the console when the following code is executed: ",
+            "code": "var data = ajax( 'https://google.com' ); \nconsole.log( data );",
             "correctAnswer": 1,
             "explain": "Because ajax is asynchronous, data will not yet be defined when it is logged to the console."
           },
@@ -1594,6 +1736,7 @@ let quizData = [
                 "False",
             ],
             "question": "Until ES6, JavaScript itself has actually never had any direct notion of asynchrony built into it.",
+            "code": "",
             "correctAnswer": 0,
             "explain": "What you typically think of asynchrony is often the Web APIs, not the JavaScript engine."
           },
@@ -1605,6 +1748,7 @@ let quizData = [
                 "binary tree",
             ],
             "question": "What data structure best explains the event loop?",
+            "code": "",
             "correctAnswer": 2,
             "explain": "The event loop is FIFO, or first-in-first-out, which is similar to that of a queue."
           },
@@ -1615,6 +1759,7 @@ let quizData = [
                 "callbackFn will be executed in at most 1000ms.",
             ],
             "question": "What statement about setTimeout(callbackFn, 1000) below is the most accurate.",
+            "code": "",
             "correctAnswer": 1,
             "explain": "Once the timer is up, the callback will get added to the event loop. If the event loop has 20 items, then the callback will execute once those 20 items are executed."
           },
@@ -1628,10 +1773,11 @@ let quizData = [
             "answers": [
                 "Writing many lines of code within one file",
                 "Making so many ajax calls that your page takes forever to load",
-                "Manually hardcoding callbacks makes your code so convoluted that it's hard to ever maintain or update it.",
+                "Manually hard coding callbacks makes your code so convoluted that it's hard to ever maintain or update it.",
                 "When you have several nested callbacks, and your code gets extremely indented",
             ],
             "question": "What is 'callback hell' all about?",
+            "code": "",
             "correctAnswer": 2,
             "explain": "But the brittle nature of manually hardcoded callbacks (even with hardcoded error handling) is often far less graceful. Once you end up specifying (aka pre-planning) all the various eventualities/paths, the code becomes so convoluted that it's hard to ever maintain or update it. That is what 'callback hell' is all about! The nesting/indentation are basically a side show, a red herring."
           },
@@ -1642,7 +1788,8 @@ let quizData = [
                 "You are using analytics to track a purchase",
                 "The functions are named poorly",
             ],
-            "question": "What is troubling about the code below: analytics.trackPurchase( purchaseData, function(){ chargeCreditCard();displayThankyouPage(); } );",
+            "question": "What is troubling about the code below: ",
+            "code": "analytics.trackPurchase( purchaseData, function(){ \n  chargeCreditCard();\n  displayThankyouPage(); \n});",
             "correctAnswer": 1,
             "explain": "This library could run this critical callback 1 time or 0 times or many times."
           },
@@ -1654,6 +1801,7 @@ let quizData = [
                 "Call the callback too late (or never)",
             ],
             "question": "What scenario below is not a potential problem that needs to be handled when using callbacks:",
+            "code": "",
             "correctAnswer": 0,
             "explain": "Once the callback is run, any issue in your code is not the fault of the callback."
           },
@@ -1665,6 +1813,7 @@ let quizData = [
                 "The first option will be executed right away, and the second will first be added to the event loop.",
             ],
             "question": "What is the difference between fn() and setTimeout(fn, 0)?",
+            "code": "",
             "correctAnswer": 3,
             "explain": "setTimeout is handled by the web API, and once the timer is up, it pushes the callback onto the event loop."
           },
@@ -1675,7 +1824,8 @@ let quizData = [
                 "1",
                 "undefined",
             ],
-            "question": "What will be logged to the console when the following code is executed: var a = 1setTimeout(() => console.log(a), 0)for (let i = 0; i < 1000; i++) { }a++",
+            "question": "What will be logged to the console when the following code is executed: ",
+            "code": "var a = 1; \nsetTimeout(() => console.log(a), 0); \nfor (let i = 0; i < 1000; i++) { \n} \na++",
             "correctAnswer": 1,
             "explain": "The callback gets pushed onto the event loop immediately, but it doesn't run until the call stack is empty which occurs after the for loop and after a++ is executed."
           },
@@ -1693,6 +1843,7 @@ let quizData = [
                 "They require you to send two callback functions: one for success and one for error case.",
             ],
             "question": "How do Promises uninvert the inversion of control?",
+            "code": "",
             "correctAnswer": 1,
             "explain": "Promises allow you to remain in control when you make a request to a third party library."
           },
@@ -1703,7 +1854,8 @@ let quizData = [
                 "2",
                 "3",
             ],
-            "question": "What will be logged to the console when the following code is executed: let prom1 = new Promise((resolve, reject) => { setTimeout(() => resolve(1), 1000) }) let prom2 = new Promise((resolve, reject) => { setTimeout(() => resolve(2), 500) }) Promise.all([prom1, prom2]).then(function onComplete(results) { const sum = results.reduce((acc, val) => { return acc + val }, 0); console.log(sum) })",
+            "question": "What will be logged to the console when the following code is executed: ",
+            "code": "let prom1 = new Promise((resolve, reject) => { \n  setTimeout(() => resolve(1), 1000); \n}); \nlet prom2 = new Promise((resolve, reject) => { \n  setTimeout(() => resolve(2), 500); \n}); \nPromise.all([prom1, prom2])\n .then(function onComplete(results) { \n   const sum = results.reduce((acc, val) => { \n    return acc + val \n   }, 0); \n   console.log(sum) \n });",
             "correctAnswer": 3,
             "explain": "Promise.all() creates a single promise that resolves when all of the input promises resolve. In the example above, onComplete won't run until prom1 and prom2 have resolved."
           },
@@ -1714,7 +1866,8 @@ let quizData = [
                 "10 'uh oh'",
                 "undefined",
             ],
-            "question": "What will be logged to the console when the following code is executed: let promArr = []; for (let i = 0; i < 10; i++) { promArr.push( new Promise((resolve, reject) => { setTimeout(() => resolve(1), 1000); }) ); } promArr.push( new Promise((resolve, reject) => { setTimeout(() => reject('uh oh'), 1500); }) ); Promise.all(promArr) .then(function onComplete(results) { const sum = results.reduce((acc, val) => { return acc + val; }, 0); console.log(sum); }) .catch(err => console.log(err));",
+            "question": "What will be logged to the console when the following code is executed: ",
+            "code": "let promArr = []; \nfor (let i = 0; i < 10; i++) { \n promArr.push( new Promise((resolve, reject) => { \n  setTimeout(() => resolve(1), 1000); \n }); ); \n} \npromArr.push( \n new Promise((resolve, reject) => { \n  setTimeout(() => reject('uh oh'), 1500); \n }); \n); \nPromise.all(promArr) \n .then(function onComplete(results) { \n  const sum = results.reduce((acc, val) => { \n   return acc + val; \n  }, 0); \n  console.log(sum); \n }) \n .catch(err => console.log(err));",
             "correctAnswer": 1,
             "explain": "If one promise rejects in Promise.all, then they all fail. Even though 10 of the promises passed to Promise.all resolved, we don't have access to the resolved data if one fails."
           },
@@ -1725,7 +1878,8 @@ let quizData = [
                 "[1, 2]",
                 "[2, 1]",
             ],
-            "question": "What will be logged to the console when the following code is executed: let prom1 = new Promise((resolve, reject) => { setTimeout(() => resolve(1), 1000) }) let prom2 = new Promise((resolve, reject) => { setTimeout(() => resolve(2), 500) }) Promise.race([prom1, prom2]).then(function onComplete(results) { console.log(results) })",
+            "question": "What will be logged to the console when the following code is executed: ",
+            "code": "let prom1 = new Promise((resolve, reject) => { \n setTimeout(() => resolve(1), 1000); \n}); \nlet prom2 = new Promise((resolve, reject) => { \n setTimeout(() => resolve(2), 500); \n}); \nPromise.race([prom1, prom2])\n .then(function onComplete(results) { \n  console.log(results); \n });",
             "correctAnswer": 1,
             "explain": "With Promise.race(), as soon as the first promise resolves, the resolved value is sent to onComplete. Because prom2s timer was for less time than prom1, prom2 won the race."
           },
@@ -1736,7 +1890,8 @@ let quizData = [
                 "['uh oh 2' 'uh oh 3']",
                 "'uh oh 3"
             ],
-            "question": "What will be logged to the console when the following code is executed: const prom1 = Promise.resolve(1); const prom2 = Promise.reject('uh oh 2'); const prom3 = Promise.reject('uh oh 3'); Promise.all([prom1, prom2, prom3]) .then(results => console.log(results)) .catch(err => console.log(err));",
+            "question": "What will be logged to the console when the following code is executed: ",
+            "code": "const prom1 = Promise.resolve(1); \nconst prom2 = Promise.reject('uh oh 2'); \nconst prom3 = Promise.reject('uh oh 3'); \nPromise.all([prom1, prom2, prom3]) \n .then(results => console.log(results);) \n .catch(err => console.log(err));",
             "correctAnswer": 0,
             "explain": "The error that gets sent to Promise.all.catch() is the rejected value of the first promise to reject. In this case that would be prom2."
           },
@@ -1753,7 +1908,8 @@ let quizData = [
                 "1 2",
                 "2 3",
             ],
-            "question": "What will be logged to the console when the following code is executed: var x = 1; function* foo() { x++; yield; x++; } var bar = foo() bar.next() console.log(x) bar.next() console.log(x)",
+            "question": "What will be logged to the console when the following code is executed: ",
+            "code": "var x = 1; \nfunction* foo() { \n x++; \n yield; \n x++; \n}; \nvar bar = foo(); \nbar.next(); \nconsole.log(x); \nbar.next(); \nconsole.log(x);",
             "correctAnswer": 3,
             "explain": "The first time bar.next is called foo is run until yield. The second time, bar.next is called, foo is run until completion."
           },
@@ -1764,7 +1920,8 @@ let quizData = [
                 "42 'Hello'",
                 "NaN"
             ],
-            "question": "What will be logged to the console when the following code is executed: function* foo(x) { var y = x * (yield 'Hello'); return y; } var it = foo(6); var res = it.next(); res = it.next(7); console.log(res.value);",
+            "question": "What will be logged to the console when the following code is executed: ",
+            "code": "function* foo(x) { \n var y = x * (yield 'Hello'); \n return y; \n} \nvar it = foo(6); \nvar res = it.next(); \nres = it.next(7); \nconsole.log(res.value);",
             "correctAnswer": 0,
             "explain": "The first it.next() starts foo, and the second one replaces 'Hello' with 7, thus y is 42."
           },
@@ -1775,7 +1932,8 @@ let quizData = [
                 "1",
                 "undefined",
             ],
-            "question": "What will be logged to the console when the following code is executed: function* foo() { var x = yield; var y = yield x; return x + y; } var it1 = foo(); var it2 = foo(); var val1 = 3; var val2 = 5; it1.next(); it2.next(); val1 = it1.next(val1).value; val2 = it2.next(val2).value; let returnVal1 = it1.next(val2).value; console.log(returnVal1);",
+            "question": "What will be logged to the console when the following code is executed: ",
+            "code": "function* foo() { \n var x = yield; \n var y = yield x; \n return x + y; \n} \nvar it1 = foo(); \nvar it2 = foo(); \nvar val1 = 3; \nvar val2 = 5; \nit1.next(); \nit2.next(); \nval1 = it1.next(val1).value; \nval2 = it2.next(val2).value; \nlet returnVal1 = it1.next(val2).value; \nconsole.log(returnVal1);",
             "correctAnswer": 2,
             "explain": "The answer ends up being x of it1 plus x of it2 which is just val1 + val2."
           },
@@ -1786,9 +1944,10 @@ let quizData = [
                 "TypeError",
                 "6",
             ],
-            "question": "What will be logged to the console when the following code is executed: function* foo() { let x = 1; while (true) { yield x; x += 1; } } let sumNextVar = 0; for (let nextVar of foo()) { if (nextVar > 3) { break; } sumNextVar += nextVar; } console.log(sumNextVar);",
+            "question": "What will be logged to the console when the following code is executed: ",
+            "code": "function* foo() { \n let x = 1; \n while (true) { \n  yield x; \n  x += 1; \n } \n} \nlet sumNextVar = 0; \nfor (let nextVar of foo()) { \n if (nextVar > 3) { \n  break; \n } \n sumNextVar += nextVar; \n} \nconsole.log(sumNextVar);",
             "correctAnswer": 3,
-            "explain": "for..of will keep calling next() until the function returns. Because we have an infinte loop in foo, we need to manually stop our for..of loop, otherwise it will not stop."
+            "explain": "for..of will keep calling next() until the function returns. Because we have an infinite loop in foo, we need to manually stop our for..of loop, otherwise it will not stop."
           },
           {
             "answers": [
@@ -1797,7 +1956,8 @@ let quizData = [
                 "ReferenceError",
                 "undefined",
             ],
-            "question": "What will be logged to the console when the following code is executed: function foo(x, y) { return new Promise((resolve, reject) => { setTimeout(() => resolve(y + 1), x); }); } function* main() { var num = yield foo(500, 1); console.log(num); } var it = main(); var p = it.next().value; p.then(num => { it.next(num); });",
+            "question": "What will be logged to the console when the following code is executed: ",
+            "code": "function foo(x, y) { \n return new Promise((resolve, reject) => { \n  setTimeout(() => resolve(y + 1), x); \n }); \n} \nfunction* main() { \n var num = yield foo(500, 1); \n console.log(num); \n} \nvar it = main(); \nvar p = it.next().value; \np.then(num => { \n it.next(num); \n});",
             "correctAnswer": 1,
             "explain": "it.next().value starts main and gets the value from foo(500, 1) which is a promise. We then resolve the promise, and then continue running main."
           },
@@ -1815,6 +1975,7 @@ let quizData = [
                 "JavaScript is moving towards removing asynchrony"
             ],
             "question": "Why do we care about asynchrony? Why not make everything synchronous?",
+            "code": "",
             "correctAnswer": 2,
             "explain": "Our code would be very slow if all of our requests were blocking."
           },
@@ -1826,6 +1987,7 @@ let quizData = [
                 "It is a function that is required in order to make PWAs",
             ],
             "question": "What is a web worker?",
+            "code": "",
             "correctAnswer": 2,
             "explain": "An environment like your browser can easily provide multiple instances of the JavaScript engine, each on its own thread, and let you run a different program in each thread. Each of those separate threaded pieces of your program is called a '(Web) Worker.' This type of parallelism is called 'task parallelism,' as the emphasis is on splitting up chunks of your program to run in parallel"
           },
@@ -1837,6 +1999,7 @@ let quizData = [
                 "Via the global scope",
             ],
             "question": "How do workers share scope or resources with each other or the main program?",
+            "code": "",
             "correctAnswer": 2,
             "explain": "Workers do not share any scope or resources with each other or the main program -- that would bring all the nightmares of threaded programming to the forefront -- but instead have a basic event messaging mechanism connecting them called the postMessage API."
           },
@@ -1848,6 +2011,7 @@ let quizData = [
                 "DOM diffing algorithm",
             ],
             "question": "What is not a common use for a web worker?",
+            "code": "",
             "correctAnswer": 3,
             "explain": "Web workers do not have access to the DOM"
           },
@@ -1857,6 +2021,7 @@ let quizData = [
                 "False",
             ],
             "question": "Shared Workers allow multiple instances of an app to share the same web worker",
+            "code": "",
             "correctAnswer": 0,
             "explain": "If your site or app allows for loading multiple tabs of the same page (a common feature), you may very well want to reduce the resource usage of their system by preventing duplicate dedicated Workers and using a Shared Worker."
           },
@@ -1872,6 +2037,7 @@ let quizData = [
                 "False",
             ],
             "question": "All performance optimizations matter and should be seriously evaluated",
+            "code": "",
             "correctAnswer": 1,
             "explain": "There is no point in chasing after small performance optimizations if you don't know have any reason to believe that it is causing your app to be slow."
           },
@@ -1880,7 +2046,8 @@ let quizData = [
               "True",
               "False",
             ],
-            "question": "The code below is a valid way to test performance: var start = (new Date()).getTime(); // do some operation var end = (new Date()).getTime(); console.log( 'Duration:', (end - start) );",
+            "question": "The code below is a valid way to test performance: ",
+            "code": "var start = (new Date()).getTime(); \n// do some operation \nvar end = (new Date()).getTime();\nconsole.log( 'Duration:', (end - start) );",
             "correctAnswer": 1,
             "explain": "There are many things wrong with this, but one of the main reasons is that this is only one run, one data point and is not statistically significant."
           },
@@ -1892,6 +2059,7 @@ let quizData = [
                 "The time of day that your tests are run",
             ],
             "question": "Which of the following will not potentially affect your performance test?",
+            "code": "",
             "correctAnswer": 3,
             "explain": "Almost everything you can imagine can potentially affect your performance tests. Especially if your question isn't just 'is x faster than y' but if the question includes 'is it a big enough difference for me to care'. Maybe x is consistently faster than y, but maybe it is so close that no one can tell the difference."
           },
@@ -1902,6 +2070,7 @@ let quizData = [
                 "They are two libraries that do more or less the same thing",
             ],
             "question": "What is the difference between jsPerf and Benchmark.js?",
+            "code": "",
             "correctAnswer": 0,
             "explain": "jsPerf uses the Benchmark.js library to run statistically accurate and reliable tests, and makes the test on an openly available URL that you can pass around to others. Each time a test is run, the results are collected and persisted with the test, and the cumulative test results are graphed on the page for anyone to see."
           },
@@ -1911,6 +2080,7 @@ let quizData = [
               "False",
             ],
             "question": "The browser will always execute your code as you wrote it",
+            "code": "",
             "correctAnswer": 1,
             "explain": "Browser JavaScript engines have come up with 'engine optimizations' which speed up the execution of your code. They might execute your code differently from the way you wrote it if their way is faster and results in the same output as your way. This is one of the reasons why it is not directly obvious how to analytically compare two pieces of code. Especially when you consider that browsers are constantly updating and improving their engines."
           },
@@ -1932,6 +2102,7 @@ let quizData = [
                 "False",
             ],
             "question": "Transpiling is transforming your ES6+ code into equivalent code that works in ES5 environments.",
+            "code": "",
             "correctAnswer": 0,
             "explain": "The idea behind a technique called transpiling (transformation + compiling) is to use a special tool to transform your ES6 code into equivalent (or close!) matches that work in ES5 environments."
           },
@@ -1943,6 +2114,7 @@ let quizData = [
                 "A pattern for defining equivalent behavior from a newer environment into an older environment, when possible.",
             ],
             "question": "What are polyfills?",
+            "code": "",
             "correctAnswer": 3,
             "explain": "Transpiling with polyfills allows you to develop using the latest JavaScript APIs without worrying about breaking your app in certain browsers."
           },
@@ -1952,6 +2124,7 @@ let quizData = [
                 "False",
             ],
             "question": "In general, new APIs cannot be polyfilled, but syntax often can be.",
+            "code": "",
             "correctAnswer": 1,
             "explain": "Not all new ES6 features need a transpiler. Polyfills (aka shims) are a pattern for defining equivalent behavior from a newer environment into an older environment, when possible. Syntax cannot be polyfilled, but APIs often can be."
           },
@@ -1968,6 +2141,7 @@ let quizData = [
                 "Completed and in progress",
             ],
             "question": "What are the two possible outcomes of a Promise?",
+            "code": "",
             "correctAnswer": 0,
             "explain": "If there are no errors, then the Promise will get resolved, but if an error occurs typically the Promise will get rejected."
           },
@@ -1977,6 +2151,7 @@ let quizData = [
                 "False",
             ],
             "question": "A promise can only be resolved (fulfilled or rejected) once",
+            "code": "",
             "correctAnswer": 0,
             "explain": "Promises can only be resolved (fulfillment or rejection) once. Any further attempts to fulfill or reject are simply ignored. Thus, once a Promise is resolved, it's an immutable value that cannot be changed."
           },
@@ -1985,7 +2160,8 @@ let quizData = [
               "True",
               "False",
             ],
-            "question": "This is a valid way to construct a promise: var p = new Promise(() => { return setTimeout(() => 5, 1000) } );",
+            "question": "This is a valid way to construct a promise: ",
+            "code": "var p = new Promise(() => { \n return setTimeout(() => 5, 1000) \n});",
             "correctAnswer": 1,
             "explain": "There are a couple things wrong with this code. For one, setTimeout does not return the return value of the callback. fn in new Promise(fn) needs to have an argument, such as resolve, which you call on your desired return value."
           },
@@ -1994,7 +2170,8 @@ let quizData = [
               "True",
               "False",
             ],
-            "question": "This is a valid way to construct and consume a promise: var p = new Promise((resolve) => { setTimeout(() => resolve(5), 1000); } ); p.done(val => { console.log(val); });",
+            "question": "This is a valid way to construct and consume a promise: ",
+            "code": "var p = new Promise((resolve) => { \n setTimeout(() => resolve(5), 1000); \n}); \np.done(val => { \n console.log(val); \n});",
             "correctAnswer": 1,
             "explain": "done is not a valid method for a Promise. The code above would be valid if it were replaced with .then()"
           },
@@ -2006,6 +2183,7 @@ let quizData = [
                 "undefined",
             ],
             "question": "What do .then(..) and .catch(..) methods return when invoked on a promise?",
+            "code": "",
             "correctAnswer": 0,
             "explain": "Both then(..) and catch(..) automatically construct and return another promise instance, which is wired to receive the resolution from whatever the return value is from the original promise's fulfillment or rejection handler (whichever is actually called)"
           },
@@ -2017,6 +2195,7 @@ let quizData = [
                 "Just another word for Promises",
             ],
             "question": "What are thenables?",
+            "code": "",
             "correctAnswer": 2,
             "explain": "Any object (or function) with a then(..) function on it is assumed to be a thenable. Any place where the Promise mechanisms can accept and adopt the state of a genuine promise, they can also handle a thenable."
           },
@@ -2025,7 +2204,9 @@ let quizData = [
               "True",
               "False",
             ],
-            "question": "p1 and p2 have essentially the same behavior: var p1 = Promise.resolve( 42 ); var p2 = new Promise( function pr(resolve){ resolve( 42 ); } );",
+            "question": "p1 and p2 have essentially the same behavior: ",
+            "code": "",
+            "code": "var p1 = Promise.resolve( 42 ); \nvar p2 = new Promise( function pr(resolve){ \n resolve( 42 ); \n});",
             "correctAnswer": 0,
             "explain": "Promise.resolve creates a resolved promise. To access the value 42, you need to call .then()"
           },
@@ -2035,7 +2216,8 @@ let quizData = [
                 "42",
                 "43",
             ],
-            "question": "What will be logged to the console when the following is executed? const a = 42, b = Promise.resolve(43), c = 44; Promise.all([a, b, c]).then(val => console.log(val));",
+            "question": "What will be logged to the console when the following is executed: ",
+            "code": "const a = 42, b = Promise.resolve(43), c = 44; \nPromise.all([a, b, c]) \n .then(val => console.log(val));",
             "correctAnswer": 0,
             "explain": "Promise.all([ .. ]) accepts an array of one or more values (e.g., immediate values, promises, thenables). It returns a promise back that will be fulfilled if all the values fulfill, or reject immediately once the first of any of them rejects"
           },
@@ -2046,6 +2228,7 @@ let quizData = [
               "42",
             ],
             "question": "What will be logged to the console when the following is executed?",
+            "code": "",
             "correctAnswer": 2,
             "explain": "While Promise.all([ .. ]) waits for all fulfillments (or the first rejection), Promise.race([ .. ]) waits only for either the first fulfillment or rejection."
           },
@@ -2055,7 +2238,8 @@ let quizData = [
                 "43",
                 "'Oops'",
             ],
-            "question": "What will be logged to the console when the following is executed? const a = Promise.resolve(43), b = 42, c = Promise.reject('Oops'); Promise.race([a, b, c]) .then(val => console.log(val)) .catch(e => console.log(e));",
+            "question": "What will be logged to the console when the following is executed: ",
+            "code": "const a = Promise.resolve(43), \n b = 42, \n c = Promise.reject('Oops'); \n\nPromise.race([a, b, c]) \n .then(val => console.log(val)) \n .catch(e => console.log(e));",
             "correctAnswer": 0,
             "explain": "While Promise.all([ .. ]) waits for all fulfillments (or the first rejection), Promise.race([ .. ]) waits only for either the first fulfillment or rejection (whichever happens first). In the code snippet above, if we changed the order of the array to Promise.race([c, b, a]) then we'd get 'Oops' printed instead."
           },
@@ -2071,6 +2255,7 @@ let quizData = [
                 "Create arrays of a specific type of values, like an array of only strings",
             ],
             "question": "What do typed arrays allow you to do in JavaScript?",
+            "code": "",
             "correctAnswer": 0,
             "explain": "It'd be tempting to look at a feature named 'typed array' and assume it means an array of a specific type of values, like an array of only strings. However, typed arrays are really more about providing structured access to binary data using array-like semantics (indexed access, etc.). The 'type' in the name refers to a 'view' layered on type of the bucket of bits, which is essentially a mapping of whether the bits should be viewed as an array of 8-bit signed integers, 16-bit signed integers, and so on."
           },
@@ -2082,6 +2267,7 @@ let quizData = [
                 "Object keys have to be strings, and map keys can be any value",
             ],
             "question": "What is the difference between maps and objects?",
+            "code": "",
             "correctAnswer": 3,
             "explain": "Maps were added in ES6 and are just like objects except the keys can be anything, even arrays or objects!"
           },
@@ -2090,7 +2276,8 @@ let quizData = [
                 "True",
                 "False",
             ],
-            "question": "The following code is valid ES6: var m = new Map(); var x = { id: 1 } y = { id: 2 }; m[x] = y;",
+            "question": "The following code is valid ES6: ",
+            "code": "var m = new Map(); \nvar x = { id: 1 }, \n y = { id: 2 }; \nm[x] = y;",
             "correctAnswer": 1,
             "explain": "Maps do not support the [] syntax. set operations must be done like m.set(x, y)."
           },
@@ -2102,6 +2289,7 @@ let quizData = [
                 "WeakMaps do not have a size property or clear() method",
             ],
             "question": "Which of the following statements about WeakMaps is not true:",
+            "code": "",
             "correctAnswer": 1,
             "explain": "WeakMaps take (only) objects as keys. Those objects are held weakly, which means if the object itself is GC'd, the entry in the WeakMap is also removed."
           },
@@ -2112,7 +2300,8 @@ let quizData = [
                 "8",
                 "5",
             ],
-            "question": "What will be logged to the console when the following code is executed: let duplicates = [1, 2, 2, 3, 4, 4, 4, 5]; let newSet = new Set(duplicates) console.log(newSet.size);",
+            "question": "What will be logged to the console when the following code is executed: ",
+            "code": "let duplicates = [1, 2, 2, 3, 4, 4, 4, 5]; \nlet newSet = new Set(duplicates); \nconsole.log(newSet.size);",
             "correctAnswer": 3,
             "explain": "Sets can be constructed with iterators such as arrays, and they only store unique values. They are kind of like objects with keys but no values."
           },
@@ -2123,7 +2312,8 @@ let quizData = [
                 "let copy = new Set([setValues])",
                 "let copy = new Set(setValues)",
             ],
-            "question": "What is one way to copy a set: let values = [1, 1, 2, 3]; let setValues = new Set(values)",
+            "question": "What is one way to copy a set: ",
+            "code": "let values = [1, 1, 2, 3]; \nlet setValues = new Set(values)",
             "correctAnswer": 3,
             "explain": "The constructor is the only way to make a new set, and it will copy values from the set into a new set."
           },
@@ -2135,6 +2325,7 @@ let quizData = [
                 "A set is a collection of unique values (duplicates are ignored)",
             ],
             "question": "Which of the following statements about Sets is not true:",
+            "code": "",
             "correctAnswer": 0,
             "explain": "A set doesn't need (and doesn't have) a get(..) because you don't retrieve a value from a set, but rather test if it is present or not, using has(..)"
           },
@@ -2143,7 +2334,8 @@ let quizData = [
               "True",
               "False",
             ],
-            "question": "This is a valid way to create an array from a set: let s = new Set([1, 2, 2, 3, 3, 3]) let a = [...s];",
+            "question": "This is a valid way to create an array from a set: ",
+            "code": "let s = new Set([1, 2, 2, 3, 3, 3]); \nlet a = [...s];",
             "correctAnswer": 0,
             "explain": "You can use the spread operator with sets"
           },
@@ -2154,7 +2346,8 @@ let quizData = [
                 "newMap.keys",
                 "newMap.forEach(key => {...})",
             ],
-            "question": "Which of the following are valid ways to make an iterator of map keys: var newMap = new Map() var x = {'foo': 1 var xVal = 'foo1'; var y = {'foo': 2 var yVal = 'foo2'; newMap.set(x, xVal newMap.set(y, yVal)",
+            "question": "Which of the following are valid ways to make an iterator of map keys: ",
+            "code": "var newMap = new Map(); \nvar x = {'foo': 1}; \nvar xVal = 'foo1'; \nvar y = {'foo': 2}; \nvar yVal = 'foo2';  \nnewMap.set(x, xVal); \nnewMap.set(y, yVal);",
             "correctAnswer": 1,
             "explain": "newMap.keys() will create an iterator of the keys. newMap.forEach() iterates over the values, and entries() creates a two dimensional array of keys and values."
           },
@@ -2165,6 +2358,7 @@ let quizData = [
                 "WeakSet values can be primitives like strings or numbers",
             ],
             "question": "Which of the following statements about WeakSets is true:",
+            "code": "",
             "correctAnswer": 0,
             "explain": "Whereas a WeakMap holds its keys weakly (but its values strongly), a WeakSet holds its values weakly (there aren't really keys)."
           },
@@ -2181,7 +2375,8 @@ let quizData = [
                 "4",
                 "5",
             ],
-            "question": "What will be logged to the console when the following code is executed? let arr = Array(5); console.log(arr.length);",
+            "question": "What will be logged to the console when the following code is executed? ",
+            "code": "let arr = Array(5); \nconsole.log(arr.length);",
             "correctAnswer": 3,
             "explain": "There's a well known gotcha with the Array(..) constructor, which is that if there's only one argument passed, and that argument is a number, instead of making an array of one element with that number value in it, it constructs an empty array with a length property equal to the number."
           },
@@ -2190,7 +2385,8 @@ let quizData = [
                 "True",
                 "False",
             ],
-            "question": "What will be logged to the console when the following code is executed? Array(1, 2, 3).length === Array.of(5, 6, 7).length",
+            "question": "What will be logged to the console when the following code is executed?",
+            "code": " Array(1, 2, 3).length === Array.of(5, 6, 7).length",
             "correctAnswer": 0,
             "explain": "Array.of(..) replaces Array(..) as the preferred function-form constructor for arrays"
           },
@@ -2200,7 +2396,8 @@ let quizData = [
                 "['foo', 'bar']",
                 "['foo', undefined, 'bar', undefined]",
             ],
-            "question": "What will be logged to the console when the following code is executed? let arrLike = { length: 4, 0: 'foo', 2: 'bar' }; console.log(Array.from(arrLike));",
+            "question": "What will be logged to the console when the following code is executed: ",
+            "code": "let arrLike = { length: 4, 0: 'foo', 2: 'bar' }; \nconsole.log(Array.from(arrLike));",
             "correctAnswer": 3,
             "explain": "Array.from(..) looks to see if the first argument is an iterable, and if so, it uses the iterator to produce values to 'copy' into the returned array. If you pass an array-like object as the first argument, it simply loops over the value, accessing numerically named properties from 0 up to whatever the value of length is. Array.from(..) never produces empty slots."
           },
@@ -2212,6 +2409,7 @@ let quizData = [
                 "sorting",
             ],
             "question": "Array.from(..) takes an optional second argument, which is a ____ callback.",
+            "code": "",
             "correctAnswer": 2,
             "explain": "The second argument, if provided, is a mapping callback (almost the same as the regular Array#map(..) expects) which is called to map/transform each value from the source to the returned target."
           },
@@ -2220,7 +2418,8 @@ let quizData = [
                 "It creates an array with two undefined values",
                 "It creates an array with two empty slots",
             ],
-            "question": "What does the following line of code do? let a = Array.from( { length: 2 } );",
+            "question": "What does the following line of code do? ",
+            "code": "let a = Array.from( { length: 2 } );",
             "correctAnswer": 0,
             "explain": "You can use Array.from() to create an array of undefined values"
           },
@@ -2231,7 +2430,8 @@ let quizData = [
                 "true / true",
                 "true / false",
             ],
-            "question": "What will be logged to the console when the following code is executed? let x = NaN, y = 0, z = -0; console.log(Object.is(x, x)); console.log(Object.is(y, z));",
+            "question": "What will be logged to the console when the following code is executed: ",
+            "code": "let x = NaN, y = 0, z = -0; \nconsole.log(Object.is(x, x)); \nconsole.log(Object.is(y, z));",
             "correctAnswer": 3,
             "explain": "Object.is(..) is basically the same as ===, with two exceptions: Object.is(NaN, NaN) is true and Object.is(0, -0) is false"
           },
@@ -2240,7 +2440,8 @@ let quizData = [
               "True",
               "False",
             ],
-            "question": "What will be logged to the console when the following code is executed? console.log(Number.isInteger(4.0));",
+            "question": "What will be logged to the console when the following code is executed: ",
+            "code": "console.log(Number.isInteger(4.0));",
             "correctAnswer": 0,
             "explain": "In JavaScript, there’s no difference between 4, 4., 4.0, or 4.0000. All of these would be considered an “integer”"
           },
@@ -2252,6 +2453,7 @@ let quizData = [
                 "2^32 - 1",
             ],
             "question": "What is Number.MAX_SAFE_INTEGER?",
+            "code": "",
             "correctAnswer": 0,
             "explain": "Max safe integer is the highest integer that can safely be represented in a JavaScript number value which is 2^53 - 1."
           },
@@ -2263,6 +2465,7 @@ let quizData = [
                 "If you want to determine if a value is not of type number, including NaN",
             ],
             "question": "Why would you use Number.isNaN() instead of isNaN()?",
+            "code": "",
             "correctAnswer": 0,
             "explain": "isNaN() checks for things that are not a number. So that includes NaN and any other value that isn't a number."
           },
@@ -2273,7 +2476,8 @@ let quizData = [
                 "{ a: 4, b: obj1 }",
                 "{ a: 4, b: '[Object object]' }",
             ],
-            "question": "What will be logged to the console when the following code is executed: var obj1 = { a: 4 }; var obj2 = { b: obj1 } Object.assign(obj1, obj2) console.log(obj1)",
+            "question": "What will be logged to the console when the following code is executed: ",
+            "code": "var obj1 = { a: 4 }; \nvar obj2 = { b: obj1 }; \nObject.assign(obj1, obj2); \nconsole.log(obj1);",
             "correctAnswer": 2,
             "explain": "Object.assign(obj1, obj2) takes obj2 and merges it into obj1. In the example above, after the merge, the attribute 'b' actually references obj1 itself recursively."
           },
@@ -2284,7 +2488,8 @@ let quizData = [
                 "TypeError",
                 "[4, 4, 4]",
             ],
-            "question": "What will be logged to the console when the following code is executed: console.log(Array(4).fill(3))",
+            "question": "What will be logged to the console when the following code is executed: ",
+            "code": "console.log(Array(4).fill(3));",
             "correctAnswer": 1,
             "explain": "Array(4) creates an array with 4 spots, and fill(3) fills them with the value 3"
           },
@@ -2295,7 +2500,8 @@ let quizData = [
                 "'21'",
                 "3",
             ],
-            "question": "What will be logged to the console when the following code is executed: var foo = [1, '2', 2, 4, '2']; var newFoo = foo.find((val) => { return val == 2 }) console.log(newFoo + 1)",
+            "question": "What will be logged to the console when the following code is executed: ",
+            "code": "var foo = [1, '2', 2, 4, '2']; \nvar newFoo = foo.find((val) => { \n return val == 2; \n}); \nconsole.log(newFoo + 1);",
             "correctAnswer": 2,
             "explain": "foo.find() returns the first value for which the comparison is truthy, so '2' at index 1. 1 is then coerced into '1' and added to '2' which is '21'."
           },
@@ -2312,7 +2518,8 @@ let quizData = [
                 "'def'",
                 "'abc'",
             ],
-            "question": "What will be logged to the console when the following code is executed: var abc = function def()  let a = 5 console.log(abc.name)",
+            "question": "What will be logged to the console when the following code is executed: ",
+            "code": "var abc = function def() { \n let a = 5; \n} \nconsole.log(abc.name)",
             "correctAnswer": 2,
             "explain": "The name property of a function will refer to the lexical binding name if it exists. In this case, it is 'def'. If the function was anonymous, the name property would be 'abc'."
           },
@@ -2323,7 +2530,8 @@ let quizData = [
                 "[1,2,'b','a']",
                 "[1,2,'a','b']",
             ],
-            "question": "What will be logged to the console when the following code is executed: var o = {}; o[2] = true o[1] = true o.b = 'awesome' o.a = 'cool'; console.log(Object.getOwnPropertyNames( o ));",
+            "question": "What will be logged to the console when the following code is executed: ",
+            "code": "var o = {}; \no[2] = true; \no[1] = true; \no.b = 'awesome'; \no.a = 'cool'; \nconsole.log(Object.getOwnPropertyNames( o ));",
             "correctAnswer": 2,
             "explain": "The ordering is: 1. First, enumerate any owned properties that are integer indexes, in ascending numeric order. 2. Next, enumerate the rest of the owned string property names in creation order 3. Finally, enumerate owned symbol properties in creation order."
           },
@@ -2334,7 +2542,8 @@ let quizData = [
                 "[3, 3, 3]",
                 "[4, 5, 6]",
             ],
-            "question": "What will be logged to the console when the following code is executed: var arr = [4, 5, 6, 7]; arr[Symbol.iterator] = function* ()  var idx = 0 do  yield 3 } while ((idx += 1) < this.length) }; console.log([...arr])",
+            "question": "What will be logged to the console when the following code is executed: ",
+            "code": "var arr = [4, 5, 6, 7]; \narr[Symbol.iterator] = function* () { \n var idx = 0; \n do { \n  yield 3; \n } while ((idx += 1) < this.length) \n}; \nconsole.log([...arr]);",
             "correctAnswer": 0,
             "explain": "The generator defines how to iterate through values in arr. We defined it to return the value 3 for each element in the array."
           },
@@ -2345,7 +2554,8 @@ let quizData = [
                 "SyntaxError",
                 "TypeError",
             ],
-            "question": "What will be logged to the console when the following code is executed: var obj1 = { a: 3 } var obj2 = { b: 3 } obj1.toString = () => 'foo' obj2[Symbol.toStringTag] = 'foo'; console.log(obj1.toString() === obj2.toString())",
+            "question": "What will be logged to the console when the following code is executed: ",
+            "code": "var obj1 = { a: 3 }; \nvar obj2 = { b: 3 }; \nobj1.toString = () => 'foo'; \nobj2[Symbol.toStringTag] = 'foo'; \nconsole.log(obj1.toString() === obj2.toString());",
             "correctAnswer": 1,
             "explain": "obj1.toString() is 'foo' and obj2.toString() is '[object foo]'"
           },
@@ -2356,7 +2566,8 @@ let quizData = [
                 "'1,2,3,4,510'",
                 "15",
             ],
-            "question": "What will be logged to the console when the following code is executed: var arr = [1, 2, 3, 4, 5]; arr[Symbol.toPrimitive] = function () {return 5}; console.log(arr + 10);",
+            "question": "What will be logged to the console when the following code is executed: ",
+            "code": "var arr = [1, 2, 3, 4, 5]; \narr[Symbol.toPrimitive] = function () { \n return 5 \n}; \nconsole.log(arr + 10);",
             "correctAnswer": 3,
             "explain": "toPrimitive is used when an object must be coerced to a primitive value. We are overriding its typical functionality for arr and forcing it to be 5."
           },
@@ -2366,7 +2577,8 @@ let quizData = [
                 "undefined",
                 "No such property/method!",
             ],
-            "question": "What will be logged to the console when the following code is executed? let obj = {a: 1, b: 2}; let handlers = { get(target,key,context) { if (Reflect.has( target, key )) { return Reflect.get(target, key, context); } else { throw 'No such property/method!'; } } } let proxy = new Proxy(obj, handlers); console.log(proxy.c);",
+            "question": "What will be logged to the console when the following code is executed: ",
+            "code": "let obj = {a: 1, b: 2}; \n\nlet handlers = { \n get(target,key,context) { \n  if (Reflect.has( target, key )) { \n   return Reflect.get(target, key, context); \n  } else { \n    throw 'No such property/method!'; \n  } \n }\n} \nlet proxy = new Proxy(obj, handlers); \nconsole.log(proxy.c);",
             "correctAnswer": 2,
             "explain": "A proxy is a special kind of object you create that 'wraps' -- or sits in front of -- another normal object. You can register special handlers (aka traps) on the proxy object which are called when various operations are performed against the proxy. These handlers have the opportunity to perform extra logic in addition to forwarding the operations on to the original target/wrapped object."
           },
@@ -2375,7 +2587,8 @@ let quizData = [
                 "True",
                 "False",
             ],
-            "question": "The following code is a valid way for testing whether arrow functions work in the runtime environment: try { a = () => {}; ARROW_FUNCS_ENABLED = true; } catch (err) { ARROW_FUNCS_ENABLED = false; }",
+            "question": "The following code is a valid way for testing whether arrow functions work in the runtime environment: ",
+            "code": "try { \n a = () => {}; \n ARROW_FUNCS_ENABLED = true; \n} catch (err) { \n ARROW_FUNCS_ENABLED = false; \n}",
             "correctAnswer": 1,
             "explain": "Unfortunately, this doesn't work, because our JS programs are compiled. Thus, the engine will choke on the arrow function syntax if it doesn't already support it. The alternative would be to use new Function( '(() => { })' ); inside the try block."
           },
@@ -2385,6 +2598,7 @@ let quizData = [
               "False",
             ],
             "question": "Tail Call Optimization helps us save memory when we do object oriented programming",
+            "code": "",
             "correctAnswer": 1,
             "explain": "Certain patterns of function calls in recursive programming, called tail calls, can be optimized in a way to avoid the extra allocation of stack frames. Instead of creating a new stack frame for the next function call, the engine just reuses the existing stack frame. That works because a function doesn't need to preserve any of the current state."
           },
@@ -2394,6 +2608,7 @@ let quizData = [
               "False",
             ],
             "question": "Tail Call Optimization (TCO) can only be applied in strict mode",
+            "code": "",
             "correctAnswer": 0,
             "explain": "This optimization can only be applied in strict mode. Yet another reason to always be writing all your code as strict!"
           },
@@ -2402,7 +2617,8 @@ let quizData = [
               "True",
               "False",
             ],
-            "question": "Tail Call Optimization will be applied to the following code: 'use strict'; function foo(x) { return x * 2; } function bar(x) { x = x + 1; if (x > 10) { return foo( x ); } else { return bar( x + 1 ); } } bar( 5 );",
+            "question": "Tail Call Optimization will be applied to the following code: ",
+            "code": "'use strict'; \n\nfunction foo(x) { \n return x * 2; \n} \n\nfunction bar(x) { \n x = x + 1; \n if (x > 10) { \n  return foo( x ); \n } else { \n  return bar( x + 1 );\n } \n} \nbar( 5 );",
             "correctAnswer": 0,
             "explain": "foo(..) and bar(..) both are in tail position, as they're the last thing to happen in their code path (other than the return). In both cases, the function calls are in proper tail position. Proper Tail Calls (PTC) of these forms can be optimized."
           },
@@ -2420,6 +2636,7 @@ let quizData = [
                 "an object",
             ],
             "question": "What do async functions return?",
+            "code": "",
             "correctAnswer": 0,
             "explain": "async functions return a promise which can then be consumed via await or with .then()."
           },
@@ -2429,6 +2646,7 @@ let quizData = [
                 "False",
             ],
             "question": "The await keyword can only be used inside an async function",
+            "code": "",
             "correctAnswer": 0,
             "explain": "The await expression causes async function execution to pause until a Promise is resolved, that is fulfilled or rejected, and to resume execution of the async function after fulfillment. When resumed, the value of the await expression is that of the fulfilled Promise."
           },
@@ -2439,7 +2657,8 @@ let quizData = [
                 "{change: {a: 3}}",
                 "TypeError",
             ],
-            "question": "What will be logged to the console when the following code is executed: var obj = { a: 1, b: 2 }; Object.observe obj function (changes)  console.log(changes ) obj.a = 3",
+            "question": "What will be logged to the console when the following code is executed: ",
+            "code": "var obj = { a: 1, b: 2 }; \nObject.observe ( \n obj, \n function (changes) { \n  console.log(changes); \n } \n); \nobj.a = 3;",
             "correctAnswer": 0,
             "explain": "Trick question! Object.observe() has been deprecated. ES6 Proxies are recommended as an alternative."
           },
@@ -2448,7 +2667,8 @@ let quizData = [
               "True",
               "False",
             ],
-            "question": "What will be logged to the console when the following code is executed? let a = 2; console.log(a ** 4 === Math.pow(a, 4));",
+            "question": "What will be logged to the console when the following code is executed: ",
+            "code": "let a = 2; \nconsole.log(a ** 4 === Math.pow(a, 4));",
             "correctAnswer": 0,
             "explain": "The ** operator has been proposed for JavaScript to perform exponentiation in the same way that Math.pow(..) does"
           },
@@ -2459,7 +2679,8 @@ let quizData = [
                 "1 2 3 4",
                 "TypeError",
             ],
-            "question": "What will be logged to the console when the following code is executed: var o1 = { a: 1, b: 2 }, o2 = { c: 3 }, o3 = { ...o1, ...o2, d: 4 }; console.log(o3.a, o3.b, o3.c, o3.d);",
+            "question": "What will be logged to the console when the following code is executed: ",
+            "code": "var o1 = { \n  a: 1, \n  b: 2 \n }, \n o2 = { \n  c: 3 }, \n o3 = { \n  ...o1, \n  ...o2, \n  d: 4 \n }; \nconsole.log(o3.a, o3.b, o3.c, o3.d);",
             "correctAnswer": 2,
             "explain": "The spread operator here works similar to that with arrays."
           },
@@ -2470,7 +2691,8 @@ let quizData = [
                 "{a: 1, b: 2}",
                 "{b: 2, c: 3}",
             ],
-            "question": "What will be logged to the console when the following code is executed: let o1 = {a: 1, b: 2, c: 3}; let {b, ...o2} = o1; console.log(o2);",
+            "question": "What will be logged to the console when the following code is executed: ",
+            "code": "let o1 = {a: 1, b: 2, c: 3}; \nlet {b, ...o2} = o1; \nconsole.log(o2);",
             "correctAnswer": 0,
             "explain": "The ... operator might also be used to gather an object's de-structured properties back into an object"
           },
@@ -2480,7 +2702,8 @@ let quizData = [
               "False",
               "TypeError",
             ],
-            "question": "What will be logged to the console when the following code is executed: var arr = [1, 2, 3, 'hello']; console.log(arr.includes('hello'));",
+            "question": "What will be logged to the console when the following code is executed: ",
+            "code": "var arr = [1, 2, 3, 'hello']; \nconsole.log(arr.includes('hello'));",
             "correctAnswer": 0,
             "explain": "Array.prototype.includes(x) simply checks to see if an element value is equal to x"
           },
@@ -2492,6 +2715,7 @@ let quizData = [
                 "A new JavaScript framework",
             ],
             "question": "What is WebAssembly?",
+            "code": "",
             "correctAnswer": 0,
             "explain": "WebAssembly proposes a format for a binary representation of a highly compressed AST (syntax tree) of code, which can then give instructions directly to the JS engine and its underpinnings, without having to be parsed by JS, or even behave by the rules of JS."
           },
@@ -2515,6 +2739,7 @@ let quizData = [
                 "All of the above.",
             ],
             "question": "Which of the following is a disadvantage of using JavaScript?",
+            "code": "",
             "correctAnswer": 3,
             "explain": "All of the above options are correct."
           },

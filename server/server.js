@@ -40,6 +40,7 @@ router.get('/quiz/:id', (req, res) => {
 router.post('/quiz', (req, res) => {
   let quizDataReq = {
     question: req.body.question,
+    code: req.body.code,
     answers: req.body.answers,
     correctAnswer: Number(req.body.correctAnswer),
     explain: req.body.explain
